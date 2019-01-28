@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Техномарт</title>
+</head>
+<body>
+<header class="main-header">
+  <div class="page-header__top">
+    <a class="main-header-logo" href="index.html">
+      <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Техномарта">
+    </a>
+    <ul class="user-navigation">
+      <li class="login-link">Поиск</li>
+    </ul>
+    <ul class="user-navigation">
+      <li class="login-link">Закладки</li>
+    </ul>
+    <ul class="user-navigation">
+      <li class="login-link">Корзина</li>
+    </ul>
+    <ul class="user-navigation">
+      <li class="login-link">Оформить заказ</li>
+    </ul>
+  </div>
+  <div class="page-header__up">
+    <h1>Интернет-магазин<br>
+      строительных материалов<br>
+      и инструментов для ремонта
+    </h1>
+    <ul class="header-contacts">
+      <li class="phone-link">Телефон: +7 (812) 555-05-55<br></li>
+      <p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+    </ul>
+    <ul class="user-navigation">
+      <li class="login-link">Войти</li>
+    </ul>
+    <ul class="user-navigation">
+      <li class="registration-link">Регистрация</li>
+    </ul>
+    Мои заказы
+    Личный кабинет
+  </div>
+  <nav class="main-navigation">
+    <ul class="site-navigation">
+      <li><a href="info.html">Компания</a></li>
+      <li><a href="inner.html">Каталог</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="offers.html">Спецпредложения</a></li>
+      <li><a href="delivery.html">Доставка</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="contaiher">
+
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="inner.html">Каталог</a></li>
+    <li><a href="inner.html">Инструмент</a></li>
+    <li class="breadcrumbs-current">Перфораторы</li>
+  </ul>
+  <h2>Перфораторы</h2>
+  <section class="filters">
+    <h2 class="visually-hidden">Фильтр товаров</h2>
+    <!-- Здесь будет форма -->
+  </section>
+
+  <div class="sidebar-title__top">
+    <a href="/brands.html">
+      <h3>Производители</h3>
+    </a>
+  </div>
+  <ul class="sidebar-brands">
+     <li class="sidebar-category">
+       <label>
+          <input type="checkbox" checked>
+          <i class="icon-checkbox"></i>
+          <a href="#">Bocsh</a>
+       </label>
+      </li>
+
+    <li class="sidebar-category"><input type="checkbox"><a href="#">Интерскол</a></li>
+    <li class="sidebar-category"><input type="checkbox" checked><a href="#">Makita</a></li>
+    <li class="sidebar-category"><input type="checkbox"><a href="#">Dewalt</a></li>
+    <li class="sidebar-category"><input type="checkbox"><a href="#">Hitachi</a></li>
+  </ul>
+
+  <p class="sidebar-category"><input type="checkbox" name="a" checked>Bocsh</p>
+  <p class="sidebar-category"><input type="checkbox" name="a">Интерскол</p>
+  <p class="sidebar-category"><input type="checkbox" name="a" checked>Makita</p>
+  <p class="sidebar-category"><input type="checkbox" name="a">Dewalt</p>
+  <p class="sidebar-category"><input type="checkbox" name="a">Hitachi</p>
+
+  <input type="checkbox" name="subscribe" id="subscribe-field" checked>
+  <label for="subscribe-field">Подписать вас на рассылку?</label>
+
+  <li>
+    <div data-a-input-name="s-ref-checkbox-AmazonBasics" class="a-checkbox s-ref-link-cursor a-spacing-none">
+      <label>
+        <input type="checkbox" name="s-ref-checkbox-AmazonBasics" value="false">
+        <i class="a-icon a-icon-checkbox"></i>
+        <span class="a-label a-checkbox-label">
+          <span class="a-size-small a-color-base s-ref-text-link s-ref-link-cursor">AmazonBasics</span>
+        </span>
+      </label>
+    </div>
+  </li>
+
+
+  <div class="sidebar-title_up">
+    <a href="#">
+      <h3>Питание</h3>
+    </a>
+  </div>
+  <ul class="sidebar-categories-list__up"  data-type="checkbox">
+    <li class="sidebar-category"><a href="#">Аккумуляторные</a></li>
+    <i class="checkbox__icon"></i>
+    <li class="sidebar-category"><a href="#">Сетевые</a></li>
+  </ul>
+
+</main>
+</body>
+</html>
