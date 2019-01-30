@@ -10,33 +10,25 @@
       <a class="main-header-logo">
         <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Техномарта">
       </a>
-      <ul class="user-navigation">
-        <li class="login-link">Поиск</li>
-      </ul>
-      <ul class="user-navigation">
-        <li class="login-link">Закладки<span>0</span></li>
-      </ul>
-      <ul class="user-navigation">
-        <li class="login-link">Корзина<span>0</span></li>
-      </ul>
-      <ul class="user-navigation">
-        <li class="login-link">Оформить заказ</li>
+      <form>
+        <input type="text" value="Поиск">
+      </form>
+      <ul class="order-menu">
+        <li class="order-menu__link order-menu__bookmarks">Закладки<span>0</span></li>
+        <li class="order-menu__link order-menu__basket">Корзина<span>0</span></li>
+        <li class="order-menu__link order-menu__button">Оформить заказ</li>
       </ul>
     </div>
     <div class="page-header__up">
-      <h1>Интернет-магазин<br>
-        строительных материалов<br>
-        и инструментов для ремонта
-      </h1>
-      <ul class="header-contacts">
-        <li class="phone-link">Телефон: +7 (812) 555-05-55<br></li>
-        <p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-      </ul>
-      <ul class="user-navigation">
-        <li class="login-link">Войти</li>
-      </ul>
-      <ul class="user-navigation">
-        <li class="registration-link">Регистрация</li>
+      <p>Интернет-магазин<br>
+          строительных материалов<br>
+          и инструментов для ремонта
+      </p>
+      <span class="phone-link">Телефон: +7 (812) 555-05-55<br></span>
+      <p class="header-contacts">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+      <ul class="user-navigation__link">
+        <li class="user-navigation__login">Войти</li>
+        <li class="user-navigation__reg">Регистрация</li>
       </ul>
     </div>
     <nav class="main-navigation">
@@ -50,8 +42,7 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
-
+  <main>
     <section class="info">
       <h2>Компания «Техномарт»</h2>
           <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>

@@ -10,36 +10,26 @@
     <a class="main-header-logo" href="index.html">
       <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Техномарта">
     </a>
-    <ul class="user-navigation">
-      <li class="login-link">Поиск</li>
-    </ul>
-    <ul class="user-navigation">
-      <li class="login-link">Закладки<span>0</span></li>
-    </ul>
-    <ul class="user-navigation">
-      <li class="login-link">Корзина<span>0</span></li>
-    </ul>
-    <ul class="user-navigation">
-      <li class="login-link">Оформить заказ</li>
+    <form>
+      <input type="text" value="Поиск">
+    </form>
+    <ul class="order-menu">
+      <li class="order-menu__link order-menu__bookmarks">Закладки<span>0</span></li>
+      <li class="order-menu__link order-menu__basket">Корзина<span>0</span></li>
+      <li class="order-menu__link order-menu__button">Оформить заказ</li>
     </ul>
   </div>
   <div class="page-header__up">
-    <h1>Интернет-магазин<br>
+    <p>Интернет-магазин<br>
       строительных материалов<br>
       и инструментов для ремонта
-    </h1>
-    <ul class="header-contacts">
-      <li class="phone-link">Телефон: +7 (812) 555-05-55<br></li>
-      <p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+    </p>
+      <span class="phone-link">Телефон: +7 (812) 555-05-55<br></span>
+      <p class="header-contacts">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+    <ul class="user-navigation__link">
+      <li class="user-navigation__login">Войти</li>
+      <li class="user-navigation__reg">Регистрация</li>
     </ul>
-    <ul class="user-navigation">
-      <li class="login-link">Войти</li>
-    </ul>
-    <ul class="user-navigation">
-      <li class="registration-link">Регистрация</li>
-    </ul>
-    Мои заказы
-    Личный кабинет
   </div>
   <nav class="main-navigation">
     <ul class="site-navigation">
@@ -53,8 +43,7 @@
   </nav>
 </header>
 
-<main class="container">
-
+<main>
   <ul class="breadcrumbs">
     <li><a href="index.html">Главная</a></li>
     <li><a href="inner.html">Каталог</a></li>
@@ -62,68 +51,70 @@
     <li class="breadcrumbs-current">Перфораторы</li>
   </ul>
   <h2>Перфораторы</h2>
-  <section class="filters">
+
+  <form><input type="text" value="Фильтр">
     <h2 class="visually-hidden">Фильтр товаров</h2>
     <!-- Здесь будет форма -->
-  </section>
 
-  <div class="sidebar-title__top">
-    <a href="/brands.html">
-      <h3>Производители</h3>
-    </a>
-  </div>
-  <ul class="sidebar-brands">
-    <li class="sidebar-category">
-      <label>
-        <input type="checkbox" name="Bosch" checked>
-        Bocsh
-      </label>
-    </li>
-    <li class="sidebar-category">
-      <label>
-        <input type="checkbox" name="Интерскол">
-        Интерскол
-      </label>
-    </li>
-    <li class="sidebar-category">
-      <label>
-        <input type="checkbox" name="Makita" checked>
-        Makita
-      </label>
-    </li>
-    <li class="sidebar-category">
-      <label>
-        <input type="checkbox" name="Dewalt">
-        Dewalt
-      </label>
-    </li>
-    <li class="sidebar-category">
-      <label>
-        <input type="checkbox" name="Hitachi">
-        Hitachi
-      </label>
-    </li>
-  </ul>
+    <div class="sidebar-title__top">
+      <a href="/brands.html">
+        <h3>Производители</h3>
+      </a>
+    </div>
+    <ul class="sidebar-brands">
+      <li class="sidebar-category">
+        <label>
+          <input type="checkbox" name="Bosch" checked>
+          Bocsh
+        </label>
+      </li>
+      <li class="sidebar-category">
+        <label>
+          <input type="checkbox" name="Интерскол">
+          Интерскол
+        </label>
+      </li>
+      <li class="sidebar-category">
+        <label>
+          <input type="checkbox" name="Makita" checked>
+          Makita
+        </label>
+      </li>
+      <li class="sidebar-category">
+        <label>
+          <input type="checkbox" name="Dewalt">
+          Dewalt
+        </label>
+      </li>
+      <li class="sidebar-category">
+        <label>
+          <input type="checkbox" name="Hitachi">
+          Hitachi
+        </label>
+      </li>
+    </ul>
 
-  <div class="sidebar-title_up">
-    <a href="#">
-      <h3>Питание</h3>
-    </a>
-  </div>
-  <ul class="sidebar-power">
-    <li class="sidebar-category">
-      <label>
-        <input type="checkbox" name="Аккумуляторные" checked>
-        Аккумуляторные
-      </label>
-    </li>
-    <li class="sidebar-category">
-      <label>
-        <input type="checkbox" name="Сетевые">
-        Сетевые
-      </label>
-    </li>
-  </ul>
+    <div class="sidebar-title_up">
+      <a href="#">
+        <h3>Питание</h3>
+      </a>
+    </div>
+    <ul class="sidebar-power">
+      <li class="sidebar-category">
+        <label>
+          <input type="checkbox" name="Аккумуляторные" checked>
+          Аккумуляторные
+        </label>
+      </li>
+      <li class="sidebar-category">
+        <label>
+          <input type="checkbox" name="Сетевые">
+          Сетевые
+        </label>
+      </li>
+    </ul>
+    <p><input type="submit" value="Показать"></p>
+  </form>
 
   <section class="catalog">
     <h2 class="visually-hidden">Список перфораторов</h2>
@@ -314,42 +305,42 @@
   </section>
 </main>
 
-<footer class="main-footer">
-  <a class="main-header-logo" href="index.html">
-    <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Техномарта">
-  </a>
-  <p class="footer-contacts">
-    Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-    Телефон: +7 (812) 555-05-55
-  </p>
-  <nav class="footer-navigation">
-    <ul class="site-navigation">
-      <li><a href="info.html">Компания</a></li>
-      <li><a href="news.html">Новости</a></li>
-      <li><a href="inner.html">Каталог</a></li>
-      <li><a href="delivery.html">Доставка</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-      <li><a href="materials.html">Материалы</a></li>
-      <li><a href="tools.html">Инструменты</a></li>
-      <li><a href="offers.html">Спецпредложения</a></li>
-    </ul>
-  </nav>
-  <div class="footer-social">
-    <span class="copyright"><span>2010-2017</span>© Компания «Техномарт»<br>Все права защищены</span>
-    <ul>
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
-    </ul>
-  </div>
-  <p class="footer-mail">
-    <b>Обратная связь</b>
-    <a class="button" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-  </p>
-  <p class="footer-copyright">
-    <b>Разработано:</b>
-    <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a>
-  </p>
-</footer>
+    <footer class="main-footer">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Техномарта">
+      </a>
+      <p class="footer-contacts">
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        Телефон: +7 (812) 555-05-55
+      </p>
+      <nav class="footer-navigation">
+        <ul class="site-navigation">
+          <li><a href="info.html">Компания</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="inner.html">Каталог</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="materials.html">Материалы</a></li>
+          <li><a href="tools.html">Инструменты</a></li>
+          <li><a href="offers.html">Спецпредложения</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <span class="copyright"><span>2010-2017</span>© Компания «Техномарт»<br>Все права защищены</span>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-mail">
+        <b>Обратная связь</b>
+        <a class="button" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
+      <p class="footer-copyright">
+        <b>Разработано:</b>
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a>
+      </p>
+    </footer>
 </body>
 </html>
