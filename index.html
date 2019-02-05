@@ -10,13 +10,28 @@
       <a class="main-header-logo">
         <img src="img/logo-technomart.svg" width="220" height="48" alt="Логотип Техномарта">
       </a>
-      <form>
-        <input type="text" value="Поиск">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+        <p>
+          <label for="search">Поиск</label>
+          <input class="search-icon" type="text" id="search" placeholder="">
+        </p>
       </form>
       <ul class="order-menu">
-        <li class="order-menu__link order-menu__bookmarks">Закладки<span>0</span></li>
-        <li class="order-menu__link order-menu__basket">Корзина<span>0</span></li>
-        <li class="order-menu__link order-menu__button">Оформить заказ</li>
+        <li>
+            <a  class="order-menu__link order-menu__bookmarks" href="#">
+                Закладки:<span>0</span>
+            </a>
+        </li>
+        <li>
+            <a class="order-menu__link order-menu__basket" href="">
+                Корзина:<span>0</span>
+            </a>
+        </li>
+        <li>
+            <a class="order-menu__link order-menu__button" href="#">
+                Оформить заказ
+            </a>
+        </li>
       </ul>
     </div>
     <div class="page-header__up">
@@ -27,8 +42,16 @@
       <span class="phone-link">Телефон: +7 (812) 555-05-55<br></span>
       <p class="header-contacts">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
       <ul class="user-navigation__link">
-        <li class="user-navigation__login">Войти</li>
-        <li class="user-navigation__reg">Регистрация</li>
+        <li>
+          <a class="user-navigation__login" href="login.html">
+            Войти
+          </a>
+        </li>
+        <li>
+          <a class="user-navigation__reg" href="#">
+            Регистрация
+          </a>
+        </li>
       </ul>
     </div>
     <nav class="main-navigation">
@@ -105,5 +128,65 @@
       <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a>
     </p>
   </footer>
+
+  <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+              <label class="visually-hidden" for="user-login">Логин</label>
+              <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+          </p>
+          <p>
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <p class="login-password-info">
+              <label class="login-checkbox">
+                  <input type="checkbox" name="remember" id="login-password-info">
+                  Запомните меня
+              </label>
+              <a class="restore" href="#">Я забыл пароль!</a>
+          </p>
+          <button class="button" type="submit">
+              Войти
+          </button>
+      </form>
+      <button class="modal-close" type="button">
+          Закрыть
+      </button>
+  </section>
+  <section class="modal modal-map">
+      <h2 class="visually-hidden">
+          Как до нас добраться
+      </h2>
+      <p>
+          <img src="img/map.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button class="modal-close" type="button">
+          Закрыть
+      </button>
+  </section>
+
+  <section class="modal modal-contacts">
+      <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="contacts-item">
+              <label for="contacts-name">Ваше имя</label>
+              <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="contacts-item">
+              <label for="contacts-email">Ваш e-mail</label>
+              <input id="contacts-email" type="tel" name="email" value="" placeholder="email@exampl.com">
+          </p>
+          <p class="contacts-item">
+             <label for="contacts-text">Текст письма</label>
+             <textarea name="contacts-text" id="contacts-text" rows="5" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+          <button class="modal-close" type="button">
+              Закрыть
+          </button>
+      </form>
+  </section>
   </body>
 </html>

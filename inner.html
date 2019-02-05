@@ -10,13 +10,28 @@
     <a class="main-header-logo" href="index.html">
       <img src="img/logo-technomart.svg" width="136" height="21" alt="Логотип Техномарта">
     </a>
-    <form>
-      <input type="text" value="Поиск">
+    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+      <p>
+        <label for="search">Поиск</label>
+        <input class="search-icon" type="text" id="search" placeholder="">
+      </p>
     </form>
     <ul class="order-menu">
-      <li class="order-menu__link order-menu__bookmarks">Закладки<span>0</span></li>
-      <li class="order-menu__link order-menu__basket">Корзина<span>0</span></li>
-      <li class="order-menu__link order-menu__button">Оформить заказ</li>
+      <li>
+        <a  class="order-menu__link order-menu__bookmarks" href="#">
+          Закладки:<span>0</span>
+        </a>
+      </li>
+      <li>
+        <a class="order-menu__link order-menu__basket" href="#">
+          Корзина:<span>10</span>
+        </a>
+      </li>
+      <li>
+        <a class="order-menu__link order-menu__button" href="#">
+          Оформить заказ
+        </a>
+      </li>
     </ul>
   </div>
   <div class="page-header__up">
@@ -27,8 +42,16 @@
       <span class="phone-link">Телефон: +7 (812) 555-05-55<br></span>
       <p class="header-contacts">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
     <ul class="user-navigation__link">
-      <li class="user-navigation__login">Войти</li>
-      <li class="user-navigation__reg">Регистрация</li>
+      <li>
+        <a class="user-navigation__login" href="login.html">
+          Войти
+        </a>
+      </li>
+      <li>
+        <a class="user-navigation__reg" href="#">
+          Регистрация
+        </a>
+      </li>
     </ul>
   </div>
   <nav class="main-navigation">
@@ -52,69 +75,64 @@
   </ul>
   <h2>Перфораторы</h2>
 
-  <form><input type="text" value="Фильтр">
-    <h2 class="visually-hidden">Фильтр товаров</h2>
-    <!-- Здесь будет форма -->
-
-    <div class="sidebar-title__top">
-      <a href="/brands.html">
-        <h3>Производители</h3>
-      </a>
-    </div>
-    <ul class="sidebar-brands">
-      <li class="sidebar-category">
-        <label>
-          <input type="checkbox" name="Bosch" checked>
-          Bocsh
-        </label>
-      </li>
-      <li class="sidebar-category">
-        <label>
-          <input type="checkbox" name="Интерскол">
-          Интерскол
-        </label>
-      </li>
-      <li class="sidebar-category">
-        <label>
-          <input type="checkbox" name="Makita" checked>
-          Makita
-        </label>
-      </li>
-      <li class="sidebar-category">
-        <label>
-          <input type="checkbox" name="Dewalt">
-          Dewalt
-        </label>
-      </li>
-      <li class="sidebar-category">
-        <label>
-          <input type="checkbox" name="Hitachi">
-          Hitachi
-        </label>
-      </li>
-    </ul>
-
-    <div class="sidebar-title_up">
-      <a href="#">
-        <h3>Питание</h3>
-      </a>
-    </div>
-    <ul class="sidebar-power">
-      <li class="sidebar-category">
-        <label>
-          <input type="checkbox" name="Аккумуляторные" checked>
-          Аккумуляторные
-        </label>
-      </li>
-      <li class="sidebar-category">
-        <label>
-          <input type="checkbox" name="Сетевые">
-          Сетевые
-        </label>
-      </li>
-    </ul>
-    <p><input type="submit" value="Показать"></p>
-  </form>
+  <section class="filters">
+    <h2 class="visually-hidden">Фильтр:</h2>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <a href="/brands.html">
+          Производители:
+        </a>
+        <ul class="filter-option">
+          <li class="sidebar-category">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-Bosch" checked>
+            <label for="filter-Bosch">
+              Bocsh
+            </label>
+          </li>
+          <li class="filter-option">
+            <input input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Интерскол">
+            <label for="filter-Интерскол">
+              Интерскол
+            </label>
+          </li>
+          <li class="filter-option">
+            <input input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Makita" checked>
+            <label for="filter-Makita">
+              Makita
+            </label>
+          </li>
+          <li class="filter-option">
+            <input input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Dewalt">
+            <label for="filter-Dewalt">
+              Dewalt
+            </label>
+          </li>
+          <li class="filter-option">
+            <input input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Hitachi">
+            <label for="filter-Dewalt">
+              Hitachi
+            </label>
+          </li>
+          </ul>
+      </fieldset>
+      <fieldset>
+        <a href="#">
+          <h3>Питание</h3>
+        </a>
+        <ul>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="Аккумуляторные" id="filter-Аккумуляторные" checked>
+            <label for="filter-Аккумуляторные">Аккумуляторные</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="Сетевые" id="filter-Сетевые" checked>
+            <label for="filter-Сетевые">Сетевые</label>
+          </li>
+        </ul>
+      </fieldset>
+      <p><input type="submit" value="Показать"></p>
+    </form>
+  </section>
 
   <section class="catalog">
     <h2 class="visually-hidden">Список перфораторов</h2>
@@ -385,5 +403,20 @@
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a>
       </p>
     </footer>
+
+    <section class="modal modal-basket">
+      <form class="busket-form" action="https://echo.htmlacademy.ru" method="post">
+        <span>Товар добавлен в корзину</span>
+        <button class="button" type="submit">
+          Оформить заказ
+        </button>
+        <button class="button" type="submit">
+          Остаться на странице
+        </button>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
+      </form>
+    </section>
 </body>
 </html>
