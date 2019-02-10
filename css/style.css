@@ -18,10 +18,13 @@ a {
 }
 
 .main-header {
+    z-index: 1;
+    background-position: 10px 10px;
     background-color: #f4f6f8;
 }
 
 .page-header__top {
+    z-index: 2;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -29,7 +32,33 @@ a {
     background-color: #30374a;
 }
 
-.page-header__up {
+.main-header-logo {
+    font-size: 21px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+    box-shadow: 1px 0 5px 0 #b52933;
+}
+
+.main-header-logo:hover {
+    background-color: #ca2c37;
+    box-shadow: 1px 0 5px 0 #9a212a;
+}
+
+.main-header-logo:focus {
+    background-color: #ee3643;
+    box-shadow: 1px 0 5px 0 #b52933;
+}
+
+.main-header-logo:active {
+    background-color: #ba2732;
+    box-shadow: 1px 0 5px 0 #ab4a47;
+}
+
+.page-header__bottom {
 
 }
 
@@ -39,6 +68,31 @@ a {
     color: #ffffff;
 
     background-color: #3a445b;
+    box-shadow: 0 0 5px 0 #293449;
+}
+
+.site-title {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee434f;
+}
+
+.phone-link {
+    font-size: 21px;
+    color: #ee3643;
+}
+
+.header-contacts {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.user-navigation__login,
+.user-navigation__reg {
+    font-size: 21px;
+    color: #000000;
 }
 
 .order-menu,
@@ -47,28 +101,66 @@ a {
     list-style: none;
 }
 
-.order-menu a,
-.user-navigation__link a,
-.site-navigation a {
-    color: #ffffff;
+.user-navigation__link a {
+    color: #000000;
 }
 
 .order-menu a:hover,
-.site-navigation a:hover {
+.user-navigation__link a:hover{
+    color: #ee3643;
     background-color: #d4d6db;
 }
 
 .order-menu a:focus,
-.site-navigation a:focus {
+.user-navigation__link a:focus {
+    color: #c5c5c5;
     background-color: #8e939c;
 }
 
+.order-menu a,
+.site-navigation a {
+    color: #ffffff
+}
+
+.site-navigation a:hover {
+    background-color: #293449;
+}
+
+.site-navigation a:focus {
+    color: #868c95;
+    background-color: #1d2739;
+}
+
+
+.info .button,
+.contacts .button {
+    font-size: 14px;
+    line-height: 18px;
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+    border: none;
+}
+
+.main-footer {
+    color: #ffffff;
+}
+
 .footer-navigation {
+    list-style: none;
     background-color: #3a445b;
 }
 
 .footer-social,
 .footer-mail,
 .footer-copyright {
-    background-color: #30374a
+    background-color: #30374a;
+}
+
+.modal {
+    display: none;
 }
