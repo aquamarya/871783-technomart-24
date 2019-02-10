@@ -13,6 +13,12 @@ body {
     background-color: #ffffff;
 }
 
+.inner {
+    color: #000000;
+
+    background-color: #f1f5f7;
+}
+
 a {
     text-decoration: none;
 }
@@ -30,6 +36,12 @@ a {
     color: #ffffff;
 
     background-color: #30374a;
+}
+
+.order-menu,
+.user-navigation__link,
+.site-navigation {
+    list-style: none;
 }
 
 .main-header-logo {
@@ -58,6 +70,64 @@ a {
     box-shadow: 1px 0 5px 0 #ab4a47;
 }
 
+.order-menu a {
+    color: #ffffff;
+}
+
+.search-form input[type="text"] {
+    color: #000000;
+}
+
+.search-form input:focus {
+    border-color: #ffffff;
+}
+
+/*.search-icon {
+    background-image: url(img/icon-search.svg);
+}*/
+
+.order-menu__bookmarks:hover,
+.order-menu__basket:hover {
+    background-color: #212a3a;
+}
+
+.order-menu__bookmarks:focus,
+.order-menu__bookmarks:active,
+.order-menu__basket:focus,
+.order-menu__basket:active {
+    background-color: #161d29;
+}
+
+.order-menu__bookmarks a:focus,
+.order-menu__bookmarks a:active,
+.order-menu__basket a:focus,
+.order-menu__basket a:active {
+    color: #999ca1;
+}
+
+.order-menu__button {
+    background-color: #63a63e;
+}
+
+.order-menu__button:hover {
+    background-color: #5fbb2d;
+}
+
+.order-menu__button:focus,
+.order-menu__button:active {
+    background-color: #518534;
+}
+
+.order-menu__button a,
+.order-menu__button a:hover {
+   color: #ffffff;
+}
+
+.order-menu__button a:focus,
+.order-menu__button a:active {
+    color: #a2be93;
+}
+
 .page-header__bottom {
 
 }
@@ -81,6 +151,7 @@ a {
 .phone-link {
     font-size: 21px;
     color: #ee3643;
+    border: 4px solid #ffffff;
 }
 
 .header-contacts {
@@ -95,29 +166,47 @@ a {
     color: #000000;
 }
 
-.order-menu,
-.user-navigation__link,
-.site-navigation {
-    list-style: none;
-}
-
 .user-navigation__link a {
     color: #000000;
 }
 
-.order-menu a:hover,
 .user-navigation__link a:hover{
     color: #ee3643;
-    background-color: #d4d6db;
+    background-color: #ffffff;
 }
 
-.order-menu a:focus,
+
 .user-navigation__link a:focus {
     color: #c5c5c5;
-    background-color: #8e939c;
+    background-color: #ffffff;
 }
 
-.order-menu a,
+.user-navigation__login a:hover {
+    color: #000000;
+}
+
+.user-navigation__login a:focus,
+.user-navigation__login a:active {
+    color: #c5c5c5;
+}
+
+.user-navigation__orders a,
+.user-navigation__acc a {
+    font-size: 11px;
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.user-navigation__orders a:hover,
+.user-navigation__acc a:hover {
+    color: #ee3643;
+}
+
+.user-navigation__orders a:focus,
+.user-navigation__acc a:focus {
+    color: #b7bfc8;
+}
+
 .site-navigation a {
     color: #ffffff
 }
@@ -131,6 +220,19 @@ a {
     background-color: #1d2739;
 }
 
+.index-columns h2 {
+    font-size: 21px;
+}
+
+.index-columns p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.index-columns ul {
+    font-size: 18px;
+
+}
 
 .info .button,
 .contacts .button {
@@ -146,19 +248,88 @@ a {
     border: none;
 }
 
+.breadcrumbs {
+    list-style: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
 .main-footer {
+    font-size: 18px;
+    line-height: 24px;
     color: #ffffff;
+    background-color: #3a445b;
+}
+
+.footer-contacts {
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .footer-navigation {
-    list-style: none;
     background-color: #3a445b;
+}
+
+.footer-navigation ul {
+    list-style: none;
+}
+
+.site-navigation__top a {
+    color: #ffffff;
+}
+
+.site-navigation__bottom a {
+    color: #f1c77e;
+}
+
+.site-navigation__top a:hover,
+.site-navigation__bottom a:hover {
+    text-decoration: underline;
+}
+
+.site-navigation__top a:focus {
+    color: #929caa;
+}
+
+.site-navigation__bottom a:focus {
+    color: #92856d;
 }
 
 .footer-social,
 .footer-mail,
 .footer-copyright {
+    font-size: 16px;
+    line-height: 18px;
     background-color: #30374a;
+}
+
+.footer-mail a,
+.footer-copyright a {
+    color: #f1c77e;
+}
+
+.footer-mail a:hover,
+.footer-copyright a:hover {
+    text-decoration: underline;
+}
+
+.footer-mail a:focus,
+.footer-copyright a:focus {
+    color: #ee3643;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #ee3643;
 }
 
 .modal {
