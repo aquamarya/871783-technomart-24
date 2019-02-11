@@ -250,8 +250,20 @@ a {
 
 .breadcrumbs {
     list-style: none;
+}
+
+.breadcrumbs a {
     font-size: 13px;
     text-transform: uppercase;
+    color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    text-decoration: underline;
+}
+
+.breadcrumbs-current {
     color: #000000;
 }
 
