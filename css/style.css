@@ -248,6 +248,10 @@ a {
     border: none;
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
 .breadcrumbs {
     list-style: none;
 }
@@ -267,8 +271,82 @@ a {
     color: #000000;
 }
 
-h2 {
+.filter h3 {
+    font-size: 12px;
     text-transform: uppercase;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 17px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.filter ul {
+    list-style: none;
+    font-size: 14px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+    color: #000000;
+}
+
+.filter-input:disabled + label {
+    color: #b4b4b4;
+
+    opacity: 0.5;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+
+}
+
+.catalog-item:hover {
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+.catalog-category a,
+.catalog-item-title a {
+    color: #000000;
+}
+
+.catalog-item h3 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.catalog-category {
+    text-transform: none;
+}
+
+.catalog-item-price {
+    font-size: 17px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.catalog-item-price .price__old {
+    color: #999999;
+    background-color: #ffffff;
+}
+
+.price {
+    color: #ffffff;
+    background-color: #ee3643;
 }
 
 .main-footer {

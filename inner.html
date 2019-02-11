@@ -92,14 +92,12 @@
     <h3 class="visually-hidden">Фильтр:</h3>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
-        <a href="/brands.html">
-          Производители:
-        </a>
-        <ul class="filter-option">
-          <li class="sidebar-category">
+        <legend>Производители:</legend>
+        <ul>
+          <li class="filter-option">
             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-Bosch" checked>
             <label for="filter-Bosch">
-              Bocsh
+              Bosch
             </label>
           </li>
           <li class="filter-option">
@@ -121,7 +119,7 @@
             </label>
           </li>
           <li class="filter-option">
-            <input input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Hitachi">
+            <input input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Hitachi" disabled>
             <label for="filter-Dewalt">
               Hitachi
             </label>
@@ -129,9 +127,7 @@
           </ul>
       </fieldset>
       <fieldset>
-        <a href="#">
-          <h3>Питание</h3>
-        </a>
+        <legend>Питание</legend>
         <ul>
           <li class="filter-option">
             <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="Аккумуляторные" id="filter-Аккумуляторные" checked>
