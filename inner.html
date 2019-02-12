@@ -86,7 +86,7 @@
     <li><a href="inner.html">Инструмент</a></li>
     <li class="breadcrumbs-current">Перфораторы</li>
   </ul>
-  <h2>Перфораторы</h2>
+  <h2 class="main-product">Перфораторы</h2>
 
   <section class="filters">
     <h3 class="visually-hidden">Фильтр:</h3>
@@ -101,26 +101,26 @@
             </label>
           </li>
           <li class="filter-option">
-            <input input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Интерскол">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Интерскол">
             <label for="filter-Интерскол">
               Интерскол
             </label>
           </li>
           <li class="filter-option">
-            <input input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Makita" checked>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Makita" checked>
             <label for="filter-Makita">
               Makita
             </label>
           </li>
           <li class="filter-option">
-            <input input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Dewalt">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Dewalt">
             <label for="filter-Dewalt">
               Dewalt
             </label>
           </li>
           <li class="filter-option">
-            <input input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Hitachi" disabled>
-            <label for="filter-Dewalt">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-Hitachi" disabled>
+            <label for="filter-Hitachi">
               Hitachi
             </label>
           </li>
@@ -370,54 +370,58 @@
 </main>
 
 <footer class="main-footer">
-  <a class="main-header-logo">
-    <img src="img/logo-technomart.svg" width="136" height="21" alt="Логотип Техномарта">
-  </a>
-  <p class="footer-contacts">
-    Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-    Телефон: +7 (812) 555-05-55
-  </p>
-  <nav class="footer-navigation">
-    <div class="site-navigation__top">
-      <ul>
-        <li><a href="info.html">Компания</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="inner.html">Каталог</a></li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-    </div>
-    <div class="site-navigation__bottom">
-      <ul>
-        <li><a href="materials.html">Материалы</a></li>
-        <li><a href="equipment.html">Техника</a></li>
-        <li><a href="tools.html">Инструменты</a></li>
-        <li><a href="offers.html">Спецпредложения</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="footer-social">
-    <span class="copyright"><span>2010-2017</span>© Компания «Техномарт»<br>Все права защищены</span>
-    <ul>
-      <li>
-        <a class="social-button" href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Техномарт во ВКонтакте">Вконтакте</a>
-      </li>
-      <li>
-        <a class="social-button" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Техномарт на Фейсбуке">Фейсбук</a>
-      </li>
-      <li>
-        <a class="social-button" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Техномарт в Инстаграме">Инстаграм</a>
-      </li>
-    </ul>
+  <div class="footer__nav-wrap">
+    <a class="main-header-logo" href="index.html">
+      <img src="img/logo-technomart.svg" width="136" height="21" alt="Логотип Техномарта">
+    </a>
+    <p class="footer-contacts">
+      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+      Телефон: +7 (812) 555-05-55
+    </p>
+    <nav class="footer-navigation">
+      <div class="site-navigation__top">
+        <ul>
+          <li><a href="info.html">Компания</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="inner.html">Каталог</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="site-navigation__bottom">
+        <ul>
+          <li><a href="materials.html">Материалы</a></li>
+          <li><a href="equipment.html">Техника</a></li>
+          <li><a href="tools.html">Инструменты</a></li>
+          <li><a href="offers.html">Спецпредложения</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
-  <p class="footer-mail">
-    <b>Обратная связь</b>
-    <a class="button" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-  </p>
-  <p class="footer-copyright">
-    <b>Разработано:</b>
-    <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a>
-  </p>
+  <div class="footer__copy-wrap">
+    <div class="footer-social">
+      <span class="copyright"><span>2010-2017</span>© Компания «Техномарт»<br>Все права защищены</span>
+      <ul>
+        <li>
+          <a class="social-button" href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Техномарт во ВКонтакте"><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+        <li>
+          <a class="social-button" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Техномарт на Фейсбуке"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li>
+          <a class="social-button" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Техномарт в Инстаграме"><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+      </ul>
+    </div>
+    <p class="footer-mail">
+      <b>Обратная связь</b>
+      <a class="button" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    </p>
+    <p class="footer-copyright">
+      <b>Разработано:</b>
+      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a>
+    </p>
+  </div>
 </footer>
 
     <section class="modal modal-basket">

@@ -4,13 +4,23 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: "Cuprum", "PT Sans Narrow", Arial, sans-serif;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
     color: #000000;
 
     background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.menu {
+    font-family: "Cuprum", Arial, sans-serif;
 }
 
 .inner {
@@ -83,26 +93,15 @@ a {
 }
 
 /*.search-icon {
-    background-image: url(img/icon-search.svg);
+    background-image: url("img/icon-search.svg");
 }*/
-
-.order-menu__bookmarks:hover,
-.order-menu__basket:hover {
-    background-color: #212a3a;
-}
 
 .order-menu__bookmarks:focus,
 .order-menu__bookmarks:active,
 .order-menu__basket:focus,
 .order-menu__basket:active {
-    background-color: #161d29;
-}
-
-.order-menu__bookmarks a:focus,
-.order-menu__bookmarks a:active,
-.order-menu__basket a:focus,
-.order-menu__basket a:active {
     color: #999ca1;
+    background-color: #161d29;
 }
 
 .order-menu__button {
@@ -248,7 +247,7 @@ a {
     border: none;
 }
 
-h2 {
+.main-product {
     text-transform: uppercase;
 }
 
@@ -349,7 +348,7 @@ h2 {
     background-color: #ee3643;
 }
 
-.main-footer {
+.footer__nav-wrap {
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
@@ -359,10 +358,6 @@ h2 {
 .footer-contacts {
     font-size: 16px;
     line-height: 18px;
-}
-
-.footer-navigation {
-    background-color: #3a445b;
 }
 
 .footer-navigation ul {
@@ -390,12 +385,10 @@ h2 {
     color: #92856d;
 }
 
-.footer-social,
-.footer-mail,
-.footer-copyright {
-    font-size: 16px;
-    line-height: 18px;
-    background-color: #30374a;
+.footer__copy-wrap{
+   font-size: 16px;
+   line-height: 18px;
+   background-color: #30374a;
 }
 
 .footer-mail a,
