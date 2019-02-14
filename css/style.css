@@ -115,9 +115,9 @@ img {
     border-color: #ffffff;
 }
 
-/*.search-icon {
-    background-image: url("img/icon-search.svg");
-}*/
+.search-icon {
+    background-image: url("../img/icon-search.svg");
+}
 
 .order-menu__bookmarks:focus,
 .order-menu__basket:focus {
@@ -254,6 +254,8 @@ img {
 
 .index-columns h2 {
     font-size: 21px;
+    text-transform: uppercase;
+
 }
 
 .index-columns p {
@@ -380,7 +382,12 @@ img {
     font-size: 16px;
 }
 
-.catalog-item .badge {
+.catalog-item--badge {
+    position: relative;
+}
+
+.catalog-item--badge::before {
+    content: "";
     position: absolute;
     top: -1px;
     right: -1px;
@@ -392,7 +399,9 @@ img {
     overflow: hidden;
     z-index: 20;
 
-/*    background: url("img/new-flag.png") no-repeat 0 0; */
+    background-image: url("../img/new-flag.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .btn__buy,
@@ -447,10 +456,11 @@ img {
 
 .price {
     position: relative;
+
+    display: block;
     width: 80px;
-    margin: 10px auto;
-    margin-bottom: 20px;
-    padding: 10px 30px;
+    margin: 10px auto 20px auto;
+    padding: 4px 30px;
 
     color: #ffffff;
     background-color: #ee3643;
@@ -497,7 +507,7 @@ img {
     border-bottom-color: #367315;
     border-radius:3px;
 
-    color: white;
+    color: #ffffff;
     font-size: 14px;
     font-weight: normal;
     font-family: "Cuprum", sans-serif;
@@ -508,7 +518,7 @@ img {
 
 .product__hover .btn__bookmark {
     color: #32425c;
-    background: white;
+    background: #ffffff;
     border-bottom-color: #63a63e;
 }
 
@@ -568,6 +578,14 @@ img {
    color: #ffffff;
    background-color: #30374a;
 }
+
+.footer-navigation ul,
+.footer-mail,
+.footer-copyright {
+    margin: 0;
+    padding: 0;
+}
+
 
 .footer-mail a,
 .footer-copyright a {
