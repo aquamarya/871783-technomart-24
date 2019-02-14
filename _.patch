@@ -1,0 +1,30 @@
+Index: css/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- css/style.css	(revision 32f1d6a905550a44497e944431fe0c91a48bc601)
++++ css/style.css	(date 1549885356616)
+@@ -250,10 +250,22 @@
+ 
+ .breadcrumbs {
+     list-style: none;
++}
++
++.breadcrumbs a {
+     font-size: 13px;
+     text-transform: uppercase;
+     color: #000000;
+ }
++
++.breadcrumbs a:hover,
++.breadcrumbs a:focus {
++    text-decoration: underline;
++}
++
++.breadcrumbs-current {
++    color: #000000;
++}
+ 
+ h2 {
+     text-transform: uppercase;
