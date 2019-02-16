@@ -127,7 +127,7 @@ img {
 
 .main-footer-logo {
     width: 220px;
-    height: 70px;
+    height: 65px;
 
     /* Временно для сетки */
     display: block;
@@ -480,6 +480,10 @@ img {
 .catalog-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
     list-style: none;
 }
 
@@ -572,6 +576,7 @@ img {
 }
 
 .catalog-item-price .price__old {
+    display: block;
     min-height: 20px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -687,41 +692,36 @@ img {
 .footer-contacts {
 
     width: 335px;
-    padding-top: 25px;
+    padding-top: 18px;
     padding-bottom: 40px;
     margin: 0;
 
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 18px;
 }
 
-.footer-navigation {
+.footer-navigation__top .container,
+.footer-navigation__bottom .container {
     display: flex;
-
-    width: 550px;
+    justify-content: space-between;
+    width: 940px;
 }
 
-.footer-navigation ul {
+.site-navigation__top ul,
+.site-navigation__bottom ul {
     display: flex;
-
+    justify-content: space-between;
+    align-items: flex-end;
     list-style: none;
 }
 
-.site-navigation__top {
-    justify-content: space-between;
-    align-items: flex-start;
-}
 
 .site-navigation__top a {
+    padding-left: 60px;
     color: #ffffff;
 }
 
-.site-navigation__bottom {
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
 .site-navigation__bottom a {
+    padding-left: 60px;
     color: #f1c77e;
 }
 
@@ -744,10 +744,10 @@ img {
     margin: 0;
     padding: 0;
 
-   font-size: 16px;
-   line-height: 18px;
-   color: #ffffff;
-   background-color: #30374a;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #30374a;
 }
 
 .footer-navigation ul,
@@ -775,6 +775,8 @@ img {
 
 .copyright {
     width: 240px;
+    margin: 0;
+    margin-left: auto;
 }
 
 .footer-social ul {
