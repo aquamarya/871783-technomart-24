@@ -394,12 +394,19 @@ img {
     border: none;
 }
 
+.main {
+    background-color: #ffffff;
+}
+
 .main-product {
     font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
 }
 
 .breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     padding: 25px 0;
     margin: 0;
     margin-right: auto;
@@ -417,6 +424,11 @@ img {
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
     text-decoration: underline;
+}
+
+.catalog-wrap {
+    display: flex;
+    justify-content: space-between;
 }
 
 .catalog-item h3 {
@@ -466,6 +478,8 @@ img {
 }
 
 .catalog-list {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -473,7 +487,7 @@ img {
     position: relative;
     display: inline-block;
     width: 218px;
-    margin-right: 20px;
+
     margin-bottom: 20px;
 
     line-height: 20px;
