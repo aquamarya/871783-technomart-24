@@ -93,14 +93,29 @@ img {
     padding: 0;
 }
 
+.main-header-logo,
+.search-form,
+.order-menu {
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.search-form {
+    margin-right: auto;
+    }
+
+.order-menu {
+    margin-left: auto;
+}
+
 .main-header-logo {
     width: 220px;
     height: 45px;
+    padding: 13px 55px;
 
-    /* Временно для сетки */
-    display: block;
 
     font-size: 21px;
+
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
@@ -385,6 +400,9 @@ img {
 }
 
 .breadcrumbs {
+    padding: 25px 0;
+    margin: 0;
+    margin-right: auto;
     list-style: none;
 }
 
