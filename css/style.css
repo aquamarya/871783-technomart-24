@@ -74,7 +74,7 @@ img {
 
     z-index: 2;
     font-size: 17px;
-    line-height: 18px;
+    line-height: 24px;
     color: #ffffff;
 
     background-color: #30374a;
@@ -111,7 +111,7 @@ img {
 .main-header-logo {
     width: 220px;
     height: 45px;
-    padding: 13px 55px;
+    padding: 12px 55px;
 
 
     font-size: 21px;
@@ -700,7 +700,8 @@ img {
 }
 
 .footer-navigation__top .container,
-.footer-navigation__bottom .container {
+.footer-navigation__bottom .container,
+.footer__copy-wrap .container {
     display: flex;
     justify-content: space-between;
     width: 940px;
@@ -738,7 +739,7 @@ img {
     color: #92856d;
 }
 
-.footer__copy-wrap{
+.footer__copy-wrap {
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -780,6 +781,7 @@ img {
 }
 
 .footer-social ul {
+    width: 160px;
     list-style: none;
 }
 
