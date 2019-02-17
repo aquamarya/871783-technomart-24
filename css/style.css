@@ -59,7 +59,6 @@ img {
 .main-header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 75px;
 
     z-index: 1;
     background-position: 10px 10px;
@@ -195,8 +194,63 @@ img {
     border-color: #ffffff;
 }
 
-.search-icon {
+.search-form,
+.order-menu__bookmarks,
+.order-menu__basket {
+    position: relative;
+    padding-left: 40px;
+}
+
+.search-form::before,
+.order-menu__bookmarks::before,
+.order-menu__basket::before,
+.user-navigation__login::before,
+.user-navigation__login::after {
+    content: "";
+
+    position: absolute;
+
+    width: 16px;
+    height: 18px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.3;
+}
+
+.search-form::before {
+    top: 22px;
+    left: 14px;
     background-image: url("../img/icon-search.svg");
+}
+.order-menu__bookmarks::before {
+    top: 2px;
+    left: 14px;
+    background-image: url("../img/icon-bookmark.svg");
+}
+.order-menu__basket::before {
+    top: 2px;
+    left: 14px;
+    background-image: url("../img/icon-cart.svg");
+
+}
+
+.search-form:hover::before{
+    opacity: 1;
+}
+
+.search-form:focus::before {
+    opacity: 0.3;
+}
+
+.order-menu__bookmarks:hover::before,
+.order-menu__bookmarks:focus::before,
+.order-menu__bookmarks:active::before,
+.order-menu__basket:hover::before,
+.order-menu__basket:focus::before,
+.order-menu__basket:active::before{
+    opacity: 1;
 }
 
 .order-menu__bookmarks:focus,
@@ -213,6 +267,11 @@ img {
 }
 
 .order-menu__button {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
     background-color: #63a63e;
 }
 
@@ -251,7 +310,6 @@ img {
 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
-    line-height: 18px;
     color: #ffffff;
 
     background-color: #3a445b;
@@ -314,6 +372,37 @@ img {
     color: #c5c5c5;
 }
 
+
+.user-navigation__login::before {
+    position: relative;
+    padding-left: 40px;
+    top: 2px;
+    left: 14px;
+    background-image: url("../img/icon-user.svg");
+    color: #c5c5c5;
+}
+
+.user-navigation__login::after {
+    position: relative;
+    padding-right: 40px;
+    top: 2px;
+    left: 14px;
+    background-image: url("../img/icon-login.svg");
+    color: #c5c5c5;
+}
+
+.user-navigation__login:hover::before,
+.user-navigation__login:hover::after {
+    color: #32425c;
+}
+
+.user-navigation__login:focus::before,
+.user-navigation__login:active::before,
+.user-navigation__login:focus::after,
+.user-navigation__login:active::after {
+    color: #32425c;
+}
+
 .user-navigation__orders a,
 .user-navigation__acc a {
     font-size: 11px;
@@ -333,11 +422,13 @@ img {
 
 .site-navigation {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 22px 50px;
+    padding: 18px 50px;
 
 }
 .site-navigation a {
+
     color: #ffffff
 }
 
@@ -383,8 +474,20 @@ img {
     font-size: 18px;
 }
 
+.info .button {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.contacts .button {
+    display: block;
+    margin-top: 18px;
+}
+
 .info .button,
 .contacts .button {
+    padding: 10px 30px;
+
     font-size: 14px;
     line-height: 18px;
 
@@ -401,7 +504,14 @@ img {
     background-color: #ffffff;
 }
 
+.main-product__wrap {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f2f6f8;
+}
+
 .main-product {
+    display: flex;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     text-transform: uppercase;
@@ -411,7 +521,7 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 25px 0;
+    padding: 20px 0;
     margin: 0;
     margin-right: auto;
     list-style: none;
@@ -653,10 +763,35 @@ img {
     text-transform: uppercase;
 }
 
+.product__hover .btn__buy:hover,
+.product__hover .btn__buy:focus {
+    background-color: #5fbb2d;
+    border: 3px solid #5fbb2d;
+    border-bottom-color: #367315;
+}
+
+.product__hover .btn__buy:active {
+    background-color: #518534;
+    border: 3px solid #518534;
+}
+
 .product__hover .btn__bookmark {
     color: #32425c;
     background: #ffffff;
     border-bottom-color: #63a63e;
+}
+
+.product__hover .btn__bookmark:hover,
+.product__hover .btn__bookmark:focus {
+    color: #32425c;
+    background: #ffffff;
+    border-color: #32425c;
+}
+
+.product__hover .btn__bookmark:active {
+    color: #c1c6ce;
+    background: #ffffff;
+    border-color: #c1c6ce;
 }
 
 .product__hover {
