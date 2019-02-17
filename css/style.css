@@ -920,14 +920,22 @@ img {
 }
 
 .footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 160px;
+    margin: 0 auto;
+    padding: 0;
     list-style: none;
 }
 
 .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 40px;
-
+    border-radius: 20px;
     background-color: #212a3a;
 }
 
