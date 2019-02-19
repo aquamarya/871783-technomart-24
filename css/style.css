@@ -40,7 +40,9 @@ img {
     font-family: "Cuprum", Arial, sans-serif;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
     position: absolute;
 
     width: 1px;
@@ -352,6 +354,7 @@ img {
 
 .user-navigation__login,
 .user-navigation__reg {
+    position: relative;
     font-size: 21px;
     color: #000000;
 }
@@ -391,7 +394,7 @@ img {
     color: #c5c5c5;
 }
 
-.user-navigation__login::after {
+.inner .user-navigation__login::after {
     position: relative;
     padding-right: 40px;
     top: 2px;
@@ -532,11 +535,43 @@ img {
 .breadcrumbs {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
     padding: 20px 0;
     margin: 0;
-    margin-right: auto;
+
     list-style: none;
+}
+
+.breadcrumbs li {
+    position: relative;
+
+    margin-right: 40px;
+}
+
+.breadcrumbs li:last-child {
+    margin-right: 0;
+}
+
+.breadcrumbs li::after {
+    content: "";
+
+    position: absolute;
+
+    width: 10px;
+    height: 14px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    top: 6px;
+    right: -25px;
+    background-image: url("../img/icon-right-small.svg");
+    color: #c1c6ce;
+}
+
+.breadcrumbs-current::after {
+    display: none;
 }
 
 .breadcrumbs a,
@@ -569,22 +604,45 @@ img {
 }
 
 .filter fieldset {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+
     border: none;
 }
 
 .filter legend {
+    margin-bottom: 20px;
+
     font-size: 17px;
     font-weight: bold;
-    line-height: 38px;
+    line-height: 30px;
     text-transform: uppercase;
     color: #000000;
 }
 
 .filter ul {
+    padding: 0;
+    margin: 0;
+
     list-style: none;
     font-size: 15px;
-    line-height: 38px;
+    line-height: 20px;
     text-transform: uppercase;
+}
+
+.filter-option {
+    margin-bottom: 22px;
+    padding-left: 35px;
+}
+
+.filter-option label {
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+    user-select: none;
 }
 
 .filter-input:hover + label,
@@ -592,10 +650,76 @@ img {
     color: #000000;
 }
 
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 0;
+
+    width: 23px;
+    height: 23px;
+
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -35px;
+
+    width: 23px;
+    height: 23px;
+
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+    content: "";
+
+    position: absolute;
+    left: -35px;
+    top: -1px;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 .filter-input:disabled + label {
     color: #b4b4b4;
 
     opacity: 0.5;
+}
+
+.filter-input-radio:checked + label::after {
+    content: "";
+
+    position: absolute;
+    left: -35px;
+    top:  -1px;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../img/radio-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-checkbox + label:hover::before,
+.filter-input-checkbox:checked + label:hover::after,
+.filter-input-radio + label:hover::before,
+.filter-input-radio:checked + label:hover::after {
+    color: #b5b5b5;
 }
 
 .catalog {
@@ -866,6 +990,9 @@ img {
     list-style: none;
 }
 
+.site-navigation__top ul {
+    padding-top: 25px;
+}
 
 .site-navigation__top a {
     padding-left: 60px;
@@ -953,7 +1080,7 @@ img {
     justify-content: center;
     width: 44px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 50%;
     background-color: #212a3a;
 }
 
