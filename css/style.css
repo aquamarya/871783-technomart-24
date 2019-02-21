@@ -161,7 +161,7 @@ img {
     flex-direction: row;
     width: 260px;
     margin: 0 auto 0 0 ;
-    padding: 11px 0 11px 44px;
+
 }
 
 .search-form p {
@@ -169,30 +169,36 @@ img {
     padding: 0;
 }
 
-.search-form input[type="text"] {
+.search-form label {
     position: absolute;
-    top: 1px;
+    top: 11px;
+    left: 45px;
+}
+
+.search-form input[type="text"] {
     box-sizing: border-box;
     width: 250px;
-    padding: 10px 0;
+    padding: 13.2px 0 13.4px 45px;
 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     color: #000000;
-
-    border-color: #ffffff;
+    border: none;
+    background-color: #30374a;
+    outline: none;
 }
 
-.search-form input:focus {
-    border-color: #ffffff;
+.search-form input[type="text"]:focus {
+    color: #000000;
+    background-color: #ffffff;
 }
 
-.search-form::before {
+.search-form label::before {
     content: "";
 
     position: absolute;
-    top: 14px;
-    left: 14px;
+    top: 4px;
+    left: -30px;
 
     width: 16px;
     height: 18px;
@@ -204,13 +210,12 @@ img {
     opacity: 0.3;
 }
 
-.search-form:hover::before{
+.search-form label:hover::before{
     opacity: 1;
 }
 
-.search-form:focus::before {
+.search-form label:focus::before {
     color: #ee3643;
-    background-color: #ffffff;
 }
 
 .order-menu {
@@ -339,8 +344,8 @@ img {
 }
 
 .site-title {
-    margin: 0;
-    margin-bottom: 42px;
+    margin: 5px 0 42px 0;
+
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
@@ -357,7 +362,7 @@ img {
     width: 270px;
 
     padding: 9px 0;
-    margin: -3px 0;
+    margin: 0;
     font-size: 21px;
     color: #ee3643;
     text-align: center;
@@ -463,10 +468,12 @@ p.header-contacts {
 }
 
 .inner .user-navigation__link {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: block;
+
+}
+
+.user-login li {
+    position: relative;
 }
 
 .inner .user-navigation__login {
@@ -474,7 +481,7 @@ p.header-contacts {
 
     display: block;
     width: 300px;
-    margin: -18px 0 0 0;
+    margin: 0;
     padding: 11px 0;
     text-align: center;
     font-size: 21px;
@@ -499,12 +506,37 @@ p.header-contacts {
     color: #c5c5c5;
 }
 
+.button-exit {
+    position: absolute;
+    top: 100px;
+    right: 170px;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 0;
+
+    background-color: #ffffff;
+    border: 0;
+
+    cursor: pointer;
+    background-image: url("../img/icon-logout.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    color: #c5c5c5;
+}
+
+.inner .user-navigation__login:hover::before,
+.button-exit:hover {
+    color: #32425c;
+}
 
 .inner .user-account {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 8px;
+    margin-left: 20px;
 }
 
 .user-navigation__login:hover::before,
@@ -559,26 +591,6 @@ a.user-navigation__acc {
 .user-navigation__orders a:focus,
 .user-navigation__acc a:focus {
     color: #b7bfc8;
-}
-
-.button-exit {
-    position: absolute;
-    top: 98px;
-    right: 170px;
-
-    width: 22px;
-    height: 22px;
-
-    font-size: 0;
-
-    background-color: #ffffff;
-    border: 0;
-
-    cursor: pointer;
-    background-image: url("../img/icon-logout.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    color: #c5c5c5;
 }
 
 .site-navigation {
