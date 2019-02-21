@@ -238,7 +238,7 @@ img {
 
     position: absolute;
     top: 2px;
-    left: 4px;
+    left: 20px;
 
     width: 16px;
     height: 18px;
@@ -254,7 +254,7 @@ img {
 
     position: absolute;
     top: 2px;
-    left: 4px;
+    left: 20px;
     width: 16px;
     height: 18px;
 
@@ -474,8 +474,8 @@ p.header-contacts {
 
     display: block;
     width: 300px;
-    margin: 0;
-    padding: 12px 0;
+    margin: -18px 0 0 0;
+    padding: 11px 0;
     text-align: center;
     font-size: 21px;
     color: #000000;
@@ -504,6 +504,7 @@ p.header-contacts {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 8px;
 }
 
 .user-navigation__login:hover::before,
@@ -520,10 +521,34 @@ p.header-contacts {
 
 a.user-navigation__orders,
 a.user-navigation__acc {
+    position: relative;
+
     font-size: 16px;
     line-height: 18px;
     color: #32425c;
     text-decoration: underline;
+}
+
+a.user-navigation__orders {
+    padding-right: 20px;
+}
+
+a.user-navigation__acc {
+    padding-left: 15px;
+}
+
+.user-navigation__orders::after {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    right: 0;
+
+    width: 5px;
+    height: 5px;
+
+    background-color: #32425c;
+    border-radius: 50%;
 }
 
 .user-navigation__orders a:hover,
@@ -538,7 +563,7 @@ a.user-navigation__acc {
 
 .button-exit {
     position: absolute;
-    top: 112px;
+    top: 98px;
     right: 170px;
 
     width: 22px;
