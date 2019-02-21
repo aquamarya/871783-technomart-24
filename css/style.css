@@ -36,9 +36,7 @@ img {
     height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden {
     position: absolute;
 
     width: 1px;
@@ -355,6 +353,7 @@ input[type="radio"].visually-hidden {
 }
 
 .phone-link {
+    position: relative;
     width: 270px;
 
     padding: 9px 0;
@@ -370,7 +369,7 @@ input[type="radio"].visually-hidden {
 
     position: absolute;
     top: 10px;
-    left: 50px;
+    left: 10px;
 
     width: 19px;
     height: 19px;
@@ -539,8 +538,8 @@ a.user-navigation__acc {
 
 .button-exit {
     position: absolute;
-    top: 103px;
-    right: 273px;
+    top: 112px;
+    right: 170px;
 
     width: 22px;
     height: 22px;
@@ -661,7 +660,7 @@ a.user-navigation__acc {
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
-    padding: 20px 20px;
+    padding: 20px 20px 20px 0;
     margin: 0;
 
     list-style: none;
@@ -669,45 +668,14 @@ a.user-navigation__acc {
 
 .breadcrumbs li {
     position: relative;
-
     margin-right: 40px;
-}
-
-.breadcrumbs li:first-child {
-    position: absolute;
-    top: 350px;
-    left: 261px;
-
-    width: 15px;
-    height: 12px;
-    background-color: transparent;
-    border: 0;
-
-    font-size: 0;
-
-    cursor: pointer;
-
-}
-.breadcrumbs li:first-child::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 15px;
-    height: 12px;
-
-    background-image: url("../img/icon-home.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    color: #c5c5c5;
 }
 
 .breadcrumbs li:last-child {
     margin-right: 0;
 }
 
-.breadcrumbs li::after,
-.breadcrumbs li:nth-child(2)::after {
+.breadcrumbs li::after {
     content: "";
 
     position: absolute;
