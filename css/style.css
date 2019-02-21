@@ -560,9 +560,8 @@ a.user-navigation__acc {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
-
 }
+
 .site-navigation a {
     display: block;
     padding: 18px 30px;
