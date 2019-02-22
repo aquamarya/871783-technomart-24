@@ -1272,6 +1272,7 @@ a.user-navigation__acc {
 }
 
 .modal {
+    display: none;
     position: fixed;
 
     color: #000000;
