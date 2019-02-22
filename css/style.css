@@ -161,11 +161,6 @@ img {
     flex-direction: row;
     width: 260px;
     margin: 0 auto 0 0 ;
-
-}
-
-.search-form p {
-    margin: 0;
     padding: 0;
 }
 
@@ -177,7 +172,7 @@ img {
 
 .search-form input[type="text"] {
     box-sizing: border-box;
-    width: 250px;
+    width: 270px;
     padding: 13.2px 0 13.4px 45px;
 
     font-family: "Cuprum", Arial, sans-serif;
@@ -193,29 +188,26 @@ img {
     background-color: #ffffff;
 }
 
-.search-form label::before {
-    content: "";
+.search-form input[type="text"]:focus + .search__label {
+    display: none;
+}
 
+.search__icon {
     position: absolute;
-    top: 4px;
-    left: -30px;
+    top: 15px;
+    left: 15px;
 
-    width: 16px;
-    height: 18px;
-
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
+    fill: #ffffff;
     opacity: 0.3;
 }
 
-.search-form label:hover::before{
+.search-form:hover .search__icon {
     opacity: 1;
 }
 
-.search-form label:focus::before {
-    color: #ee3643;
+.search-form:focus + .search__label + .search__icon {
+    opacity: 1;
+    fill: #ee3643;
 }
 
 .order-menu {
@@ -289,6 +281,32 @@ img {
 .order-menu__basket:active {
     color: #999ca1;
     background-color: #161d29;
+}
+
+.inner .order-menu__basket {
+    position: relative;
+    display: block;
+    width: 150px;
+
+    margin: 0;
+    padding: 11px 0 11px 5px;
+    text-align: center;
+    background-color: #ee3643;
+}
+
+.inner .order-menu__basket::before {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 16px;
+    height: 18px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/icon-cart.svg");
+    opacity: 0.3;
 }
 
 .order-menu__button {
@@ -471,8 +489,7 @@ p.header-contacts {
     display: block;
 
 }
-
-.user-login li {
+.user-login {
     position: relative;
 }
 
@@ -508,8 +525,8 @@ p.header-contacts {
 
 .button-exit {
     position: absolute;
-    top: 100px;
-    right: 180px;
+    top: 15px;
+    right: 10px;
 
     width: 21px;
     height: 17px;
@@ -897,6 +914,22 @@ a.user-navigation__acc {
 .filter-input-radio + label:hover::before,
 .filter-input-radio:checked + label:hover::after {
     color: #b5b5b5;
+}
+
+.filter-button {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 40px;
+
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
 }
 
 .catalog {
