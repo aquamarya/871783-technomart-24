@@ -104,6 +104,8 @@ img {
 
     font-size: 17px;
     line-height: 30px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
 
     text-align: center;
     color: #ffffff;
@@ -119,7 +121,9 @@ img {
     height: 65px;
 
     font-size: 21px;
-    line-height: 65px;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
@@ -154,12 +158,13 @@ img {
 
 .search-form {
     position: relative;
-    left: 230px;
+    top: 0.5px;
+    left: 220px;
 
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-    width: 260px;
+    width: 270px;
     margin: 0 auto 0 0 ;
     padding: 0;
 }
@@ -173,7 +178,7 @@ img {
 .search-form input[type="text"] {
     box-sizing: border-box;
     width: 270px;
-    padding: 11px 0 11px 45px;
+    padding: 12px 0 12px 45px;
 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
@@ -195,7 +200,7 @@ img {
 .search__icon {
     position: absolute;
     top: 12px;
-    left: 8px;
+    left: 12px;
 
     fill: #ffffff;
     opacity: 0.3;
