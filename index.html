@@ -243,24 +243,28 @@
   </section>
 
   <section class="modal modal-contacts">
-      <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="contacts-item">
-              <label for="contacts-name">Ваше имя</label>
-              <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-          <p class="contacts-item">
-              <label for="contacts-email">Ваш e-mail</label>
-              <input id="contacts-email" type="text" name="email" value="" placeholder="email@exampl.com">
-          </p>
-          <p class="contacts-item">
-             <label for="contacts-text">Текст письма</label>
-             <textarea name="contacts-text" id="contacts-text" rows="5" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="button" type="submit">Отправить</button>
-          <button class="modal-close">
-              Закрыть
-          </button>
-      </form>
+    <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="contacts-top">
+        <p class="contacts-item">
+          <label for="contacts-name">Ваше имя</label>
+          <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="contacts-item">
+          <label for="contacts-email">Ваш e-mail</label>
+          <input id="contacts-email" type="text" name="email" value="" placeholder="email@exampl.com">
+        </p>
+      </div>
+      <p class="contacts-item">
+        <label for="contacts-text">Текст письма</label>
+        <textarea name="contacts-text" id="contacts-text" rows="5" placeholder="В свободной форме"></textarea>
+      </p>
+      <div class="contacts-btn">
+        <button class="button" type="submit">Отправить</button>
+      </div>
+      <button class="modal-close">
+        Закрыть
+      </button>
+    </form>
   </section>
   </body>
 </html>
