@@ -1630,7 +1630,7 @@ a.user-navigation__acc {
 .modal-contacts {
     bottom: 130px;
     left: 35%;
-
+    display: none;
 
     width: 620px;
     margin-left: -100px;
@@ -1767,7 +1767,7 @@ a.user-navigation__acc {
 .modal-map {
     top: 50%;
     left: 50%;
-    display: none;
+
     width: 940px;
     height: 446px;
     margin-top: -200px;
