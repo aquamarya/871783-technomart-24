@@ -1769,7 +1769,7 @@ a.user-navigation__acc {
     left: 50%;
 
     width: 940px;
-    height: 446px;
+    height: 420px;
     margin-top: -200px;
     margin-left: -470px;
     padding: 0;
@@ -1783,6 +1783,18 @@ a.user-navigation__acc {
 }
 
 .modal-map p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
     margin: 0;
     padding: 0;
+}
+
+.modal-map iframe {
+    position: relative;
+    z-index: 2;
+
+    border: none;
 }
