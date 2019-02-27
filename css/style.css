@@ -1513,7 +1513,6 @@ a.user-navigation__acc {
     top: 425px;
     left: 35%;
 
-
     width: 620px;
     margin-left: -110px;
     padding: 50px 90px 0 90px;
@@ -1632,6 +1631,7 @@ a.user-navigation__acc {
     bottom: 130px;
     left: 35%;
     display: none;
+
     width: 620px;
     margin-left: -100px;
     padding: 50px 80px 0 80px;
@@ -1775,6 +1775,11 @@ a.user-navigation__acc {
     padding: 0;
 
     border: none;
+
+    background-image: url("../img/map-popup.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
 }
 
 .modal-map p {
