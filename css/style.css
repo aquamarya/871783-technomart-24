@@ -1630,7 +1630,7 @@ a.user-navigation__acc {
 .modal-contacts {
     bottom: 130px;
     left: 35%;
-    display: none;
+
 
     width: 620px;
     margin-left: -100px;
@@ -1638,7 +1638,6 @@ a.user-navigation__acc {
 
     border-top: 7px solid #ee3643;
 }
-
 
 .modal-close::before,
 .modal-close::after {
@@ -1749,7 +1748,7 @@ a.user-navigation__acc {
 
     border-color: #ee3643;
     border-radius: 3px;
-
+    outline: none;
     background-color: #ee3643;
 }
 
@@ -1762,12 +1761,13 @@ a.user-navigation__acc {
     padding: 20px 80px 40px;
 
     background-color: #f4f4f4;
+
 }
 
 .modal-map {
     top: 50%;
     left: 50%;
-
+    display: none;
     width: 940px;
     height: 446px;
     margin-top: -200px;
