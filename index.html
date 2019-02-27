@@ -301,12 +301,8 @@
               name.value = storage;
               email.focus();
           } else {
-              if (storage) {
-                  email.value = storage;
-                  contactsText.focus();
-              } else {
-                  name.focus();}
-              }
+            name.focus();
+          }
           });
 
       close.addEventListener("click", function (evt) {
@@ -324,7 +320,6 @@
           } else {
               if (isStorageSupport) {
                   localStorage.setItem("name", name.value);
-                  localStorage.setItem("email", email.value);
               }
           }
       });
