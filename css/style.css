@@ -886,9 +886,20 @@ a.user-navigation__acc {
     line-height: 20px;
 }
 
-.filter h3 {
-    font-size: 12px;
+.filters h3 {
+    width: 95px;
+    padding: 8px 0;
+
+    font-size: 13px;
+    line-height: 18px;
     text-transform: uppercase;
+    font-family: "PT Sans", Arial, sans-serif;
+
+    text-align: center;
+    color: #000000;
+
+    border: none;
+    background: #f7f3ec;
 }
 
 .filter fieldset {
@@ -899,6 +910,11 @@ a.user-navigation__acc {
     border: none;
 }
 
+.range-filter {
+    width: 220px;
+    margin-top: 20px;
+}
+
 .filter legend {
     margin-bottom: 20px;
 
@@ -907,6 +923,85 @@ a.user-navigation__acc {
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
+}
+
+.range-controls {
+    position: relative;
+
+    height: 41px;
+    margin-bottom: 10px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    background-color: #f7f3ec;
+
+}
+
+.range-controls .scale {
+    height: 2px;
+
+    background: #00ca74;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+
+    width: 4px;
+    height: 4px;
+    padding: 0;
+
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+}
+
+.range-controls .toggle-max {
+    left: 110px;
+}
+
+.price-controls {
+    font-size: 0;
+}
+
+.price-controls label {
+    display: inline-block;
+    width: 50%;
+
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.price-controls input {
+    width: 95px;
+    padding: 8px 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: #000000;
+
+    border: none;
+    background: #f7f3ec;
+}
+
+.max-price {
+    text-align: right;
 }
 
 .filter ul {
@@ -920,6 +1015,7 @@ a.user-navigation__acc {
 }
 
 .filter-option {
+  /*width: 220px;*/
     margin-bottom: 22px;
     padding-left: 35px;
 }
