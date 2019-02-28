@@ -248,16 +248,16 @@
       <div class="contacts-top">
         <p class="contacts-item">
           <label for="contacts-name">Ваше имя</label>
-          <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия" required>
         </p>
         <p class="contacts-item">
           <label for="contacts-email">Ваш e-mail</label>
-          <input id="contacts-email" type="text" name="email" value="" placeholder="email@exampl.com">
+          <input id="contacts-email" type="text" name="email" value="" placeholder="email@exampl.com"required>
         </p>
       </div>
       <p class="contacts-item">
         <label for="contacts-text">Текст письма</label>
-        <textarea name="contacts-text" id="contacts-text" rows="5" placeholder="В свободной форме"></textarea>
+        <textarea name="contacts-text" id="contacts-text" rows="5" placeholder="В свободной форме" required></textarea>
       </p>
       <div class="contacts-btn">
         <button class="button" type="submit">Отправить</button>
@@ -351,8 +351,8 @@
       });
 
       window.addEventListener("keydown", function (evt) {
-          evt.preventDefault();
           if (evt.keyCode === 27) {
+              evt.preventDefault();
               if (mapPopup.classList.contains("modal-show")) {
                   mapPopup.classList.remove("modal-show");
               }

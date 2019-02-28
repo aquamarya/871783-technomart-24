@@ -1488,6 +1488,8 @@ a.user-navigation__acc {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 6;
+
+    display: none;
     color: #000000;
 
     background-color: #ffffff;
@@ -1509,7 +1511,6 @@ a.user-navigation__acc {
 }
 
 .modal-basket{
-    display: none;
     top: 425px;
     left: 35%;
 
@@ -1519,7 +1520,6 @@ a.user-navigation__acc {
 
     border-top: 7px solid #ee3643;
 }
-
 
 .modal-close {
     position: absolute;
@@ -1535,6 +1535,32 @@ a.user-navigation__acc {
     border: 0;
 
     cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: -2px;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: #ee3643;
+}
+
+.modal-close::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .busket-description {
@@ -1630,13 +1656,28 @@ a.user-navigation__acc {
 .modal-contacts {
     bottom: 130px;
     left: 35%;
-    display: none;
 
     width: 620px;
     margin-left: -100px;
     padding: 50px 80px 0 80px;
 
     border-top: 7px solid #ee3643;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
 }
 
 .modal-close::before,
@@ -1761,7 +1802,6 @@ a.user-navigation__acc {
     padding: 20px 80px 40px;
 
     background-color: #f4f4f4;
-
 }
 
 .modal-map {
@@ -1782,6 +1822,49 @@ a.user-navigation__acc {
     opacity: 1;
 }
 
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: -2px;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: #ee3643;
+}
+
+.modal-close::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
 .modal-map p {
     position: absolute;
     top: 0;
@@ -1798,3 +1881,4 @@ a.user-navigation__acc {
 
     border: none;
 }
+
