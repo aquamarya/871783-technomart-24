@@ -326,7 +326,7 @@
       });
 
       window.addEventListener("keydown", function (evt) {
-          if (evt.keyCode === 27) {
+          if (evt.code === "Escape") {
               evt.preventDefault();
               if (popup.classList.contains("modal-show")) {
                   popup.classList.remove("modal-show");
@@ -351,7 +351,7 @@
       });
 
       window.addEventListener("keydown", function (evt) {
-          if (evt.keyCode === 27) {
+          if (evt.code === "Escape"){
               evt.preventDefault();
               if (mapPopup.classList.contains("modal-show")) {
                   mapPopup.classList.remove("modal-show");
