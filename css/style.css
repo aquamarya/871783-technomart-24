@@ -1866,7 +1866,7 @@ legend.price-filter {
     border-top: 7px solid #ee3643;
 }
 
-.modal-close {
+.modal-close__contacts {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -1878,12 +1878,13 @@ legend.price-filter {
 
     background-color: transparent;
     border: 0;
+    outline: none;
 
     cursor: pointer;
 }
 
-.modal-close::before,
-.modal-close::after {
+.modal-close__contacts::before,
+.modal-close__contacts::after {
     content: "";
 
     position: absolute;
@@ -1896,13 +1897,13 @@ legend.price-filter {
     background-color: #ee3643;
 }
 
-.modal-close::before {
+.modal-close__contacts::before {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
-.modal-close::after {
+.modal-close__contacts::after {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -2039,7 +2040,7 @@ legend.price-filter {
     opacity: 1;
 }
 
-.modal-close {
+.modal-close__map {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -2056,8 +2057,8 @@ legend.price-filter {
     z-index: 2;
 }
 
-.modal-close::before,
-.modal-close::after {
+.modal-close__map::before,
+.modal-close__map::after {
     content: "";
 
     position: absolute;
@@ -2070,13 +2071,13 @@ legend.price-filter {
     background-color: #ee3643;
 }
 
-.modal-close::before {
+.modal-close__map::before {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
-.modal-close::after {
+.modal-close__map::after {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);

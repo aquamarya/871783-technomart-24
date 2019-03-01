@@ -1,7 +1,7 @@
 var link = document.querySelector(".button-connect");
 
 var popup = document.querySelector(".modal-contacts");
-var close = document.querySelector(".modal-close");
+var close = document.querySelector(".modal-close__contacts");
 
 var form = document.querySelector("form");
 var name = document.querySelector("[name=name]");
@@ -58,7 +58,7 @@ form.addEventListener("submit", function (evt) {
 var mapLink = document.querySelector(".map");
 
 var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-close");
+var mapClose = mapPopup.querySelector(".modal-close__map");
 
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
