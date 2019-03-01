@@ -794,12 +794,25 @@ a.user-navigation__acc {
     background-color: #ffffff;
 }
 
+.popular-product__wrap,
+.main-brand__wrap {
+    width: 100%;
+    padding: 10px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f9f5f0;
+}
+
 .main-product__wrap {
     width: 100%;
     padding: 10px 0;
     background-color: #f2f6f8;
 }
 
+.popular-product,
+.main-brand,
 .main-product {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -807,6 +820,39 @@ a.user-navigation__acc {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     text-transform: uppercase;
+}
+
+.btn__popular,
+.btn__brand {
+    padding: 10px 40px;
+    display: block;
+
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Cuprum", Arial, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+    border: none;
+    border-radius: 2px;
+}
+
+a.btn__popular,
+a.btn__brand {
+    margin-bottom: 40px;
+}
+
+.btn__popular:hover,
+.btn__brand:hover {
+    background-color: #ca2c37;
+}
+
+.btn__popular:focus,
+.btn__brand:focus {
+    background-color: #ba2732;
 }
 
 .breadcrumbs {
@@ -1915,6 +1961,7 @@ legend.price-filter {
 
 .contacts-form input {
     width: 220px;
+    background-color: #ffffff;
 }
 
 .contacts-form textarea {
@@ -1922,12 +1969,17 @@ legend.price-filter {
     margin-bottom: 19px;
 }
 
-.contacts-form input:hover {
+.contacts-form input:hover,
+.contacts-form textarea:hover {
     border-color: #b5b5b5;
 }
 
-.contacts-form input:focus {
+.contacts-form input:focus,
+.contacts-form input:active,
+.contacts-form textarea:focus,
+.contacts-form textarea:active {
     border-color: #ee3643;
+
 }
 
 .contacts-form .button {
