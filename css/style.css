@@ -718,7 +718,7 @@ a.user-navigation__acc {
 
 }
 .index-columns h2 {
-    font-size: 21px;
+    font-size: 30px;
     font-weight: bold;
     font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
@@ -797,18 +797,14 @@ a.user-navigation__acc {
 .popular-product__wrap,
 .main-brand__wrap {
     width: 100%;
-    padding: 10px 30px;
+    margin-bottom: 20px;
+    padding: 10px 0;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: #f9f5f0;
-}
-
-.main-product__wrap {
-    width: 100%;
-    padding: 10px 0;
-    background-color: #f2f6f8;
 }
 
 .popular-product,
@@ -822,8 +818,20 @@ a.user-navigation__acc {
     text-transform: uppercase;
 }
 
+.popular-product,
+.main-brand {
+    padding-left: 30px;
+}
+
+.main-product__wrap {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f2f6f8;
+}
+
 .btn__popular,
 .btn__brand {
+    margin-right: 30px;
     padding: 10px 40px;
     display: block;
 
@@ -832,17 +840,12 @@ a.user-navigation__acc {
     font-family: "Cuprum", Arial, sans-serif;
     text-align: center;
     color: #ffffff;
-    vertical-align: middle;
+
     text-transform: uppercase;
 
     background-color: #ee3643;
     border: none;
     border-radius: 2px;
-}
-
-a.btn__popular,
-a.btn__brand {
-    margin-bottom: 40px;
 }
 
 .btn__popular:hover,
@@ -853,6 +856,60 @@ a.btn__brand {
 .btn__popular:focus,
 .btn__brand:focus {
     background-color: #ba2732;
+}
+
+ul.catalog-list__popular {
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.brands-catalog {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.brands-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+.brand-item {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 218px;
+    height: 140px;
+    margin-bottom: 20px;
+
+    border: 1px solid #e5e5e5;
+}
+
+.brand-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.brand-item:hover {
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+.brand-item:focus,
+.brand-item:active {
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
 }
 
 .breadcrumbs {
@@ -934,6 +991,11 @@ a.btn__brand {
 
 .filters h3 {
     width: 200px;
+    border: none;
+}
+
+.filters h3,
+.product-filter {
     padding: 11px 0 11px 20px;
 
     font-size: 13px;
@@ -944,8 +1006,35 @@ a.btn__brand {
     text-align: left;
     color: #000000;
 
-    border: none;
     background: #f7f3ec;
+}
+
+.product-filter{
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.filter-sorting{
+    width: 700px;
+    margin: 20px auto;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+}
+
+.filter legend {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
 }
 
 .filter fieldset {
@@ -959,16 +1048,6 @@ a.btn__brand {
 .range-filter {
     width: 220px;
     margin-top: 20px;
-}
-
-.filter legend {
-    margin-bottom: 20px;
-
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #000000;
 }
 
 legend.price-filter {
@@ -1723,7 +1802,7 @@ legend.price-filter {
     border-top: 7px solid #ee3643;
 }
 
-.modal-close {
+.modal-close__busket {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -1739,8 +1818,8 @@ legend.price-filter {
     cursor: pointer;
 }
 
-.modal-close::before,
-.modal-close::after {
+.modal-close__busket::before,
+.modal-close__busket::after {
     content: "";
 
     position: absolute;
@@ -1753,13 +1832,13 @@ legend.price-filter {
     background-color: #ee3643;
 }
 
-.modal-close::before {
+.modal-close__busket::before {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
-.modal-close::after {
+.modal-close__busket::after {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
