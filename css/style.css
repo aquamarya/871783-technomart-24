@@ -939,11 +939,90 @@ a.user-navigation__acc {
     background-position: 0 0;
 }
 
+
+.slider-tools {
+    position: relative;
+}
+
+.slider-tool-controls {
+    position: absolute;
+    left: 33%;
+    bottom: 150px;
+    z-index: 100;
+
+    width: 160px;
+    height: 18px;
+
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
+}
+
+.slider-tool-controls i {
+    position: relative;
+
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0;
+
+    background-color: #ffffff;
+}
+
+.slider-tool-controls i.active::after {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    z-index: 1;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #ee3643;
+}
+
+.slider-tool-controls .active::before {
+
+}
+
 .slider-tool-list {
     margin: 0;
     padding: 0;
 
     list-style: none;
+}
+
+.slider-tool-item {
+    display: none;
+    padding: 25px 24px 20px 24px;
+}
+
+.slider-tool-item:nth-child(1) {
+    display: block;
+}
+
+.slider-tool-item h3 {
+    margin: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    font-family: "Cuprum", Arial, sans-serif;
+}
+
+.slider-toop-item p {
+    margin: 0;
+    margin-bottom: 28px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Cuprum", Arial, sans-serif;
 }
 
 .slider-tool-button {
