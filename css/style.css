@@ -675,7 +675,6 @@ a.user-navigation__acc {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
     justify-content: space-around;
 }
 
