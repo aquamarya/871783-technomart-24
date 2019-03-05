@@ -912,13 +912,13 @@ a.user-navigation__acc {
 
     text-transform: uppercase;
 
-    background-color: rgba(178, 178, 178, 0.3);
+    background-color: rgba(178, 178, 178, 0.4);
     border: none;
     border-radius: 2px;
 }
 
 .range-list .button:hover {
-    background-color: rgba(178, 178, 178, 0.6);
+    background-color: rgba(178, 178, 178, 0.7);
 }
 
 .range-list .button:focus,
