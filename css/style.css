@@ -1046,9 +1046,7 @@ a.user-navigation__acc {
     background-color: #ee3643;
 }
 
-.slider-tool-item::before {
-    content: "";
-
+.btn-left {
     position: absolute;
     top: 40%;
     left: 24px;
@@ -1058,12 +1056,11 @@ a.user-navigation__acc {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-image: url("../img/icon-left.svg");
+    cursor: pointer;
 }
 
 
-.slider-tool-item::after {
-    content: "";
-
+.btn-right {
     position: absolute;
     top: 40%;
     right: 24px;
@@ -1073,6 +1070,8 @@ a.user-navigation__acc {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-image: url("../img/icon-right.svg");
+
+    cursor: pointer;
 }
 
 #slider-1:checked ~ .slider-tools #slide1,
@@ -1356,7 +1355,9 @@ ul.catalog-list__popular {
     margin-bottom: 30px;
 }
 
-.slide-service-button {
+.slide-delivery,
+.slide-gaarantee,
+.slide-credit {
     width: 220px;
 
     padding-top: 13px;
@@ -1375,12 +1376,12 @@ ul.catalog-list__popular {
     border: none;
 }
 
-.slide-service-button:hover {
+.slide-delivery:hover {
     background-color: #293449;
 }
 
-.slide-service-button:focus,
-.slide-service-button:active {
+.slide-delivery:focus,
+.slide-delivery:active {
     color: #32425c;
     background-color: #ffffff;
 }
