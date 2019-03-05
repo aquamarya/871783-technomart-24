@@ -701,7 +701,7 @@ a.user-navigation__acc {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 80px 0;
+    padding: 60px 0 90px 0;
     margin: 0;
 
     font-family: "Cuprum", Arial, sans-serif;
@@ -1249,7 +1249,7 @@ ul.catalog-list__popular {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     list-style: none;
 }
 
@@ -1316,22 +1316,28 @@ ul.catalog-list__popular {
 .index-columns .service {
     max-width: 420px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .slider-service {
     position: relative;
-}
-
-.slider-list__service {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
+    box-sizing: border-box;
 }
 
 .slider-item__service {
     display: none;
+    width: 600px;
+    min-height: 180px;
+    height: auto;
+
+    padding: 0;
+    background: #f4f8f9;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    border: none;
+    animation: scale 0.7s ease-in-out;
+
 }
 
 .slider-item__service:nth-child(1) {
@@ -1353,11 +1359,23 @@ ul.catalog-list__popular {
     max-width: 290px;
     margin: 0;
     margin-bottom: 30px;
+
 }
 
-.slide-delivery,
-.slide-gaarantee,
-.slide-credit {
+.slider-item__service img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 465px;
+    margin: 0;
+
+}
+
+.service__input {
+    display: none;
+}
+
+.service__label {
     width: 220px;
 
     padding-top: 13px;
@@ -1373,17 +1391,54 @@ ul.catalog-list__popular {
     color: #ffffff;
 
     background-color: #32425c;
-    border: none;
+    border-top: 1px solid #405069;
+    border-bottom: 1px solid #293449;
 }
 
-.slide-delivery:hover {
+.service__label::after {
+    content: "";
+
+    position: absolute;
+    top: -40px;
+    right: 0;
+
+    width: 10px;
+    height: 272px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+
+    background-image: url("../img/shadow.png");
+}
+
+label:hover {
     background-color: #293449;
 }
 
-.slide-delivery:focus,
-.slide-delivery:active {
+input:checked + label {
     color: #32425c;
     background-color: #ffffff;
+    border: none;
+}
+
+#tab1:checked ~ #slide-delivery, #tab2:checked ~ #slide-guarantee, #tab3:checked ~ #slide-credit {
+    display: block;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.005);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .breadcrumbs {
