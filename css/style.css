@@ -545,7 +545,8 @@ p.header-contacts {
     position: relative;
 }
 
-.inner .user-navigation__login {
+.inner .user-navigation__login,
+.inner .user-navigation__login:hover{
     position: relative;
 
     display: block;
@@ -556,6 +557,11 @@ p.header-contacts {
     font-size: 21px;
     color: #000000;
     background-color: #ffffff;
+}
+
+.inner .user-navigation__login:focus,
+.inner .user-navigation__login:active {
+    color: #c5c5c5;
 }
 
 .inner .user-navigation__login::before,
@@ -574,14 +580,16 @@ p.header-contacts {
 
     background-image: url("../img/icon-user.svg");
     background-repeat: no-repeat;
-    color: #c5c5c5;
+    fill: #c5c5c5;
 }
 
 .inner .user-navigation__login:hover::before {
-     color: #32425c;
+    fill: #32425c;
  }
 
-.button-exit {
+.button-exit,
+.button-exit:focus,
+.button-exit:active {
     position: absolute;
     top: 15px;
     right: 10px;
@@ -601,7 +609,11 @@ p.header-contacts {
     color: #c5c5c5;
 }
 
-.inner .user-navigation__login:hover::before,
+.button-exit:focus,
+.button-exit:active {
+    outline: none;
+}
+
 .button-exit:hover {
     color: #32425c;
 }
@@ -1886,6 +1898,7 @@ legend.price-filter {
     background-image: url("../img/icon-up-dir.svg");
     background-repeat: no-repeat;
     fill: #c5c5c5;
+
 }
 
 .btn__down {
