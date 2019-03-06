@@ -912,13 +912,13 @@ a.user-navigation__acc {
 
     text-transform: uppercase;
 
-    background-color: rgba(178, 178, 178, 0.4);
+    background-color: rgba(178, 178, 178, 0.3);
     border: none;
     border-radius: 2px;
 }
 
 .range-list .button:hover {
-    background-color: rgba(178, 178, 178, 0.7);
+    background-color: rgba(178, 178, 178, 0.6);
 }
 
 .range-list .button:focus,
@@ -999,7 +999,52 @@ a.user-navigation__acc {
     width: 620px;
 }
 
-.slider-tool-controls {
+.slider-tool-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    z-index: 2;
+
+    text-align: center;
+    font-size: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.tool-btn-left,
+.tool-btn-right {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0;
+
+    background-color: #ffffff;
+}
+
+.tool-btn-left:focus,
+.tool-btn-left:active,
+.tool-btn-right:focus,
+.tool-btn-right:active {
+    position: absolute;
+ /* top: 0;
+    left: 0; */
+    z-index: 2;
+
+    width: 6px;
+    height: 6px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+
+    background-color: #ee3643;
+}
+
+/*.slider-tool-controls {
     position: absolute;
     left: 50%;
     bottom: 50px;
@@ -1045,6 +1090,7 @@ a.user-navigation__acc {
 
     background-color: #ee3643;
 }
+*/
 
 .btn-left {
     position: absolute;
