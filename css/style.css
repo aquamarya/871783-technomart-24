@@ -1476,11 +1476,11 @@ ul.catalog-list__popular {
     background-image: url("../img/shadow.png");
 }
 
-label:hover {
+.service__input:hover {
     background-color: #293449;
 }
 
-input:checked + label {
+.service__input:checked + label {
     color: #32425c;
     background-color: #ffffff;
     border: none;
