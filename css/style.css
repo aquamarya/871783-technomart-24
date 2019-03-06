@@ -558,7 +558,9 @@ p.header-contacts {
     background-color: #ffffff;
 }
 
-.inner .user-navigation__login::before {
+.inner .user-navigation__login::before,
+.inner .user-navigation__login:focus::before,
+.inner .user-navigation__login:active::before {
     content: "";
 
     position: absolute;
@@ -574,6 +576,10 @@ p.header-contacts {
     background-repeat: no-repeat;
     color: #c5c5c5;
 }
+
+.inner .user-navigation__login:hover::before {
+     color: #32425c;
+ }
 
 .button-exit {
     position: absolute;
@@ -1871,6 +1877,35 @@ legend.price-filter {
 
 .filter-sorting legend {
     margin-bottom: 0;
+}
+
+.btn__up {
+    display: block;
+    width: 11px;
+    height: 10px;
+    background-image: url("../img/icon-up-dir.svg");
+    background-repeat: no-repeat;
+    fill: #c5c5c5;
+}
+
+.btn__down {
+    display: block;
+    width: 11px;
+    height: 10px;
+    background-image: url("../img/icon-down-dir.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    fill: #c5c5c5;
+}
+
+.btn__up:hover,
+.btn__down:hover {
+    fill: #000000;
+}
+
+.btn__up:focus path,
+.btn__down:focus path {
+    fill: #ee3643;
 }
 
 .catalog-list {
