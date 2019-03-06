@@ -1030,8 +1030,8 @@ a.user-navigation__acc {
     transform: translateX(-50%);
 }
 
-.tool-btn-left,
-.tool-btn-right {
+.btn-tool-left,
+.btn-tool-right {
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -1045,13 +1045,11 @@ a.user-navigation__acc {
     background-color: #ffffff;
 }
 
-.tool-btn-left:focus,
-.tool-btn-left:active,
-.tool-btn-right:focus,
-.tool-btn-right:active {
+.btn-tool-left__active,
+.btn-tool-right__active {
     position: absolute;
- /* top: 0;
-    left: 0; */
+    bottom: 10px;
+    left: 0;
     z-index: 2;
 
     width: 6px;
@@ -1891,33 +1889,29 @@ legend.price-filter {
     margin-bottom: 0;
 }
 
-.btn__up {
-    display: block;
-    width: 11px;
-    height: 10px;
-    background-image: url("../img/icon-up-dir.svg");
-    background-repeat: no-repeat;
-    fill: #c5c5c5;
-
-}
-
+.btn__up,
 .btn__down {
     display: block;
     width: 11px;
     height: 10px;
-    background-image: url("../img/icon-down-dir.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    fill: #c5c5c5;
 }
 
-.btn__up:hover,
-.btn__down:hover {
+.btn__down svg,
+.btn__up svg {
+    fill: #c5c5c5
+}
+
+.btn__up:hover svg,
+.btn__down:hover svg {
     fill: #000000;
 }
 
 .btn__up:focus path,
-.btn__down:focus path {
+.btn__down:focus path,
+.btn__up:active path,
+.btn__down:active path{
     fill: #ee3643;
 }
 
