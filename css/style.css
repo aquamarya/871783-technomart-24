@@ -490,29 +490,34 @@ p.header-contacts {
     display: block;
     width: 120px;
     margin: 0 10px 0 0;
-    padding: 12px 0;
+    padding: 12px 0 12px 10px;
     text-align: center;
+
     font-size: 21px;
     color: #000000;
     background-color: #ffffff;
 }
 
-.user-navigation__login::before {
-    content: "";
-
+.user-navigation__login svg {
     position: absolute;
-    top: 14px;
-    right: 55px;
+    top: 15px;
+    left: 15px;
 
-    width: 16px;
+    width: 20px;
     height: 18px;
 
-    padding-left: 40px;
-
-    background-image: url("../img/icon-login.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    color: #c5c5c5;
+    fill: #c5c5c5;
+}
+
+.user-navigation__login:hover svg {
+    fill: #32425c;
+}
+
+.user-navigation__login:focus svg,
+.user-navigation__login:active svg {
+    fill: #c5c5c5;
 }
 
 .user-navigation__reg {
@@ -564,29 +569,31 @@ p.header-contacts {
     color: #c5c5c5;
 }
 
-.inner .user-navigation__login svg,
-.inner .user-navigation__login:focus svg,
-.inner .user-navigation__login:active svg {
+.inner .user-navigation__login::before {
+    content: "";
+
     position: absolute;
     top: 14px;
-    right: 225px;
+    left: 15px;
 
-    width: 16px;
-    height: 18px;
+    width: 18px;
+    height: 17px;
 
-    padding-left: 40px;
-
+    background-image: url(../img/icon-user.svg);
     background-repeat: no-repeat;
-    fill: #c5c5c5;
+    color: #c5c5c5;
 }
 
-.inner .user-navigation__login:hover svg {
-    fill: #32425c;
+.inner .user-navigation__login:hover::before {
+    color: #32425c;
  }
 
-.button-exit,
-.button-exit:focus,
-.button-exit:active {
+.inner .user-navigation__login:focus::before,
+.inner .user-navigation__login:active::before {
+    color: #c5c5c5;
+}
+
+.button-exit {
     position: absolute;
     top: 15px;
     right: 20px;
@@ -606,13 +613,18 @@ p.header-contacts {
     fill: #c5c5c5;
 }
 
+.button-exit:hover {
+    fill: #32425c;
+}
+
 .button-exit:focus,
 .button-exit:active {
     outline: none;
 }
 
-.button-exit:hover {
-    fill: #32425c;
+.button-exit:focus,
+.button-exit:active {
+    fill: #c5c5c5;
 }
 
 .inner .user-account {
