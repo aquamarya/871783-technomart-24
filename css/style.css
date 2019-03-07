@@ -564,11 +564,9 @@ p.header-contacts {
     color: #c5c5c5;
 }
 
-.inner .user-navigation__login::before,
-.inner .user-navigation__login:focus::before,
-.inner .user-navigation__login:active::before {
-    content: "";
-
+.inner .user-navigation__login svg,
+.inner .user-navigation__login:focus svg,
+.inner .user-navigation__login:active svg {
     position: absolute;
     top: 14px;
     right: 225px;
@@ -578,12 +576,11 @@ p.header-contacts {
 
     padding-left: 40px;
 
-    background-image: url("../img/icon-user.svg");
     background-repeat: no-repeat;
     fill: #c5c5c5;
 }
 
-.inner .user-navigation__login:hover::before {
+.inner .user-navigation__login:hover svg {
     fill: #32425c;
  }
 
@@ -592,7 +589,7 @@ p.header-contacts {
 .button-exit:active {
     position: absolute;
     top: 15px;
-    right: 10px;
+    right: 20px;
 
     width: 21px;
     height: 17px;
@@ -606,7 +603,7 @@ p.header-contacts {
 
     background-repeat: no-repeat;
     background-position: 0 0;
-    color: #c5c5c5;
+    fill: #c5c5c5;
 }
 
 .button-exit:focus,
@@ -615,7 +612,7 @@ p.header-contacts {
 }
 
 .button-exit:hover {
-    color: #32425c;
+    fill: #32425c;
 }
 
 .inner .user-account {
@@ -1022,13 +1019,13 @@ a.user-navigation__acc {
     left: 50%;
     bottom: 55px;
     z-index: 2;
-    width: 40px;
+    width: 30px;
     height: 10px;
 
     display: flex;
     justify-content: space-between;
     text-align: center;
-    
+
     font-size: 0;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -1037,17 +1034,12 @@ a.user-navigation__acc {
 
 .btn-tool {
     padding: 0;
-
-    position: relative;
-    margin-left: 10px;
     width: 10px;
     height: 10px;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 0;
 
-    background-color: #ffffff;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
 
 .btn-tool__active {
@@ -1834,6 +1826,7 @@ legend.price-filter {
 }
 
 .product-filter {
+    position: relative;
     width: 680px;
     margin: 0 0 20px 0;
     display: -webkit-box;
@@ -1861,11 +1854,11 @@ legend.price-filter {
 }
 
 .product-filter h3 {
-    padding: 0 30px;
+    padding: 0 10px;
 }
 
 .filter-sorting {
-    padding: 11px 10px 0 60px;
+    padding-left: 125px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1876,12 +1869,45 @@ legend.price-filter {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    vertical-align: middle;
+}
 
+.filter-sorter {
+    position: relative;
+    margin-bottom: 0;
+    padding: 0 63px 0 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #000000;
     border: none;
 }
 
-.filter-sorting legend {
-    margin-bottom: 0;
+.filter-sorter a {
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #c5c5c5;
+    text-decoration: underline dotted #ee3643;
+}
+
+.filter-sorter a:hover {
+    color: #000000;
+    text-decoration: underline solid #ee3643;
+}
+
+.filter-sorter a:focus,
+.filter-sorter a:active {
+    color: #ee3643;
+    text-decoration: none;
+}
+
+.filter-sorter-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 43px;
+    height: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .btn__up,
@@ -1889,13 +1915,14 @@ legend.price-filter {
     display: block;
     width: 11px;
     height: 10px;
+    font-size: 0;
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
 .btn__down svg,
 .btn__up svg {
-    fill: #c5c5c5
+    fill: #c5c5c5;
 }
 
 .btn__up:hover svg,
@@ -2086,6 +2113,26 @@ legend.price-filter {
     line-height: 18px;
     outline: none;
     text-transform: uppercase;
+}
+
+
+.btn__buy::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    width: 16px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url(../img/icon-cart.svg);
+    opacity: 0.3;
+}
+
+.btn__buy:hover::before,
+.btn__buy:focus::before,
+.btn__buy:active::before {
+    opacity: 1;
 }
 
 .product__hover .btn__buy:hover,
