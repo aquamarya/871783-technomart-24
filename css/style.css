@@ -212,7 +212,6 @@ img {
     color: #000000;
     border: none;
     background-color: #30374a;
-    outline: none;
 }
 
 .search-form input[type="text"]:focus {
@@ -615,11 +614,6 @@ p.header-contacts {
 
 .button-exit:hover {
     fill: #32425c;
-}
-
-.button-exit:focus,
-.button-exit:active {
-    outline: none;
 }
 
 .button-exit:focus,
@@ -1089,7 +1083,6 @@ a.user-navigation__acc {
 
 .btn-tool__active {
     background-color: #ee3643;
-    outline: none;
 }
 
 /*.slider-tool-controls {
@@ -2118,17 +2111,17 @@ legend.price-filter {
     margin-bottom: 7px;
     padding: 7px 0;
 
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Cuprum", sans-serif;
+    color: #ffffff;
+
     background-color: #63a63e;
     border: 3px solid #63a63e;
     border-bottom-color: #367315;
     border-radius:3px;
 
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: normal;
-    font-family: "Cuprum", sans-serif;
-    line-height: 18px;
-    outline: none;
     text-transform: uppercase;
 }
 
@@ -2138,8 +2131,10 @@ legend.price-filter {
     position: absolute;
     top: 50px;
     left: 55px;
+
     width: 16px;
     height: 18px;
+
     background-repeat: no-repeat;
     background-position: 0 0;
     background-image: url(../img/icon-cart.svg);
@@ -2197,7 +2192,6 @@ legend.price-filter {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
     padding: 0;
     margin: 0 0 20px 0;
 
@@ -2233,7 +2227,7 @@ legend.price-filter {
 
 .pagination-item-current a {
     color: #ffffff;
-    outline: none;
+
     background-color: #ee3643;
     border-color: #ee3643;
     border-radius: 2px;
@@ -2694,7 +2688,7 @@ legend.price-filter {
     font-size: 14px;
     line-height: 18px;
     font-family: "Cuprum", Arial, sans-serif;
-    outline: none;
+
     vertical-align: middle;
     text-transform: uppercase;
 }
@@ -2754,7 +2748,6 @@ legend.price-filter {
 
     background-color: transparent;
     border: 0;
-    outline: none;
 
     cursor: pointer;
 }
@@ -2830,7 +2823,6 @@ legend.price-filter {
     line-height: 18px;
     font-family: "PT Sans", Arial, sans-serif;
     color: #b4b4b4;
-    outline: none;
 
     border: 2px solid #d7dcde;
     border-radius: 2px;
@@ -2873,10 +2865,10 @@ legend.price-filter {
     vertical-align: middle;
     text-transform: uppercase;
 
+    background-color: #ee3643;
     border-color: #ee3643;
     border-radius: 2px;
-    outline: none;
-    background-color: #ee3643;
+
 }
 
 .contacts-form .button:hover {
