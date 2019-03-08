@@ -121,7 +121,7 @@ img {
 
     font-size: 17px;
     line-height: 30px;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     font-weight: bold;
 
     text-align: center;
@@ -1026,6 +1026,39 @@ a.user-navigation__acc {
     width: 620px;
 }
 
+.slider-btn--1 {
+    position: absolute;
+    top: 40%;
+    left: 24px;
+    width: 22px;
+    height: 40px;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/icon-left.svg");
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.slider-btn--2 {
+    position: absolute;
+    top: 40%;
+    right: 24px;
+    width: 22px;
+    height: 40px;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/icon-right.svg");
+    border: none;
+
+    cursor: pointer;
+}
+
 .slider-tool-btn {
     position: absolute;
     left: 50%;
@@ -1106,34 +1139,6 @@ a.user-navigation__acc {
     background-color: #ee3643;
 }
 */
-
-.btn-left {
-    position: absolute;
-    top: 40%;
-    left: 24px;
-    width: 22px;
-    height: 40px;
-
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-image: url("../img/icon-left.svg");
-    cursor: pointer;
-}
-
-
-.btn-right {
-    position: absolute;
-    top: 40%;
-    right: 24px;
-    width: 22px;
-    height: 40px;
-
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-image: url("../img/icon-right.svg");
-
-    cursor: pointer;
-}
 
 #slider-1:checked ~ .slider-tools #slide1,
 #slider-2:checked ~ .slider-tools #slide2 {
