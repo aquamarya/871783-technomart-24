@@ -78,7 +78,7 @@ img {
 
     z-index: 2;
     font-size: 17px;
-    line-height: 22px;
+    line-height: 20px;
     color: #ffffff;
 
     background-color: #30374a;
@@ -115,7 +115,7 @@ img {
 .main-header-logo {
     position: absolute;
     width: 220px;
-    height: 45px;
+    height: 42px;
     padding: 0;
     z-index: 3;
 
@@ -197,15 +197,15 @@ img {
 
 .search-form label {
     position: absolute;
-    top: 11px;
-    left: 40px;
+    top: 10px;
+    left: 48px;
 }
 
 .search-form input[type="text"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 270px;
-    padding: 12px 0 12px 45px;
+    padding: 11px 0 11px 45px;
 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
@@ -225,8 +225,8 @@ img {
 
 .search__icon {
     position: absolute;
-    top: 12px;
-    left: 12px;
+    top: 11px;
+    left: 17px;
 
     fill: #ffffff;
     opacity: 0.3;
@@ -260,11 +260,16 @@ img {
     color: #ffffff;
 }
 
-.order-menu__bookmarks,
-.order-menu__basket {
+.order-menu__bookmarks {
     position: relative;
     padding-left: 45px;
-    padding-right: 30px
+    padding-right: 33px
+}
+
+.order-menu__basket {
+    position: relative;
+    padding-left: 47px;
+    padding-right: 33px
 }
 
 .order-menu__bookmarks::before {
@@ -272,7 +277,7 @@ img {
 
     position: absolute;
     top: 1px;
-    left: 16px;
+    left: 17px;
 
     width: 16px;
     height: 18px;
@@ -288,7 +293,7 @@ img {
 
     position: absolute;
     top: 1px;
-    left: 14px;
+    left: 16px;
     width: 16px;
     height: 18px;
 
@@ -403,9 +408,10 @@ img {
 }
 
 .site-title {
-    margin: 5px 0 42px 60px;
+    margin: 8px 0 40px 55px;
 
     font-style: italic;
+
     font-size: 16px;
     line-height: 23px;
     color: #ee434f;
@@ -423,13 +429,15 @@ img {
 
 .phone-link {
     position: relative;
-    width: 270px;
+    width: 214px;
 
-    padding: 9px 0;
-    margin: 0;
+    padding: 11px 50px 7px 0;
+    margin: 5px 0 0 20px;
+
     font-size: 21px;
+    line-height: 21px;
     color: #ee3643;
-    text-align: center;
+    text-align: right;
     border: 3px solid #ffffff;
 }
 
@@ -438,12 +446,12 @@ img {
 
     position: absolute;
     top: 11px;
-    left: 10px;
+    left: 11px;
 
     width: 19px;
     height: 19px;
 
-    padding-left: 50px;
+    padding-left: 48px;
 
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
@@ -453,24 +461,25 @@ img {
 
 .header-contacts {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 23px;
     color: #32425c;
 }
 
 p.header-contacts {
     margin-top: 6px;
-    text-align: center;
+    margin-left: 30px;
 }
 
 .user-navigation__link{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .user-navigation__link a:hover{
@@ -487,10 +496,10 @@ p.header-contacts {
     position: relative;
 
     display: block;
-    width: 120px;
-    margin: 0 10px 0 0;
-    padding: 12px 0 12px 10px;
-    text-align: center;
+    width: 95px;
+    margin: 5px 10px 0 10px;
+    padding: 11px 25px 9px 0;
+    text-align: right;
 
     font-size: 21px;
     color: #000000;
@@ -524,8 +533,8 @@ p.header-contacts {
 
     display: block;
     width: 150px;
-    margin: 0;
-    padding: 12px 0;
+    margin: 5px 0 0 0;
+    padding: 11px 0 9px 0;
     text-align: center;
     font-size: 21px;
     color: #000000;
@@ -701,9 +710,17 @@ a.user-navigation__acc {
 
 .site-navigation a {
     display: block;
-    padding: 18px 30px;
+    padding: 17px 30px 15px 30px;
     vertical-align: middle;
     color: #ffffff
+}
+
+.site-navigation li:first-child {
+    padding-left: 20px;
+}
+
+.site-navigation li:last-child {
+    padding-right: 21px;
 }
 
 .site-navigation a:hover {
@@ -722,7 +739,7 @@ a.user-navigation__acc {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 60px 0 105px 0;
+    padding: 60px 0 100px 0;
     margin: 0;
 
     font-family: "Cuprum", Arial, sans-serif;
@@ -730,7 +747,7 @@ a.user-navigation__acc {
 
 .info {
     width: 540px;
-
+    margin-top: -8px;
 }
 
 .contacts {
@@ -907,9 +924,9 @@ a.user-navigation__acc {
 }
 
 .range-item h3 {
-    padding-left: 20px;
+    padding-left: 23px;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 24px;
     font-family: "Cuprum", Arial, sans-serif;
     font-weight: bold;
 
@@ -919,10 +936,11 @@ a.user-navigation__acc {
 .range-list-top .button,
 .range-list-bottom .button {
     width: 130px;
-    margin-top: -11px;
-    margin-bottom: 19px;
-    margin-left: 20px;
-    padding: 10px 0;
+    margin-top: -9px;
+    margin-bottom: 22px;
+    margin-left: 24px;
+    padding: 11px 2px 9px 2px;
+
     display: block;
 
     font-size: 14px;
@@ -936,6 +954,14 @@ a.user-navigation__acc {
     background-color: rgba(178, 178, 178, 0.3);
     border: none;
     border-radius: 2px;
+}
+
+.range-list-top .button {
+    margin-left: 25px;
+}
+
+.range-list-bottom .button {
+    margin-left: 24px;
 }
 
 .range-list .button:hover {
@@ -959,17 +985,17 @@ a.user-navigation__acc {
 
 .materials__icon {
     top: 30px;
-    right: 41px;
+    right: 43px;
 }
 
 .tool__icon {
-    top: 30px;
+    top: 32px;
     right: 27px;
 }
 
 .technique__icon {
     top: 30px;
-    right: 30px;
+    right: 32px;
 }
 
 .discounts__icon  {
@@ -1012,7 +1038,7 @@ a.user-navigation__acc {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin-bottom: 60px;
+    margin-bottom: 35px;
 }
 
 .slider-tools {
@@ -1040,7 +1066,7 @@ a.user-navigation__acc {
 .slider-btn--2 {
     position: absolute;
     top: 40%;
-    right: 24px;
+    right: 20px;
     width: 22px;
     height: 40px;
 
@@ -1173,13 +1199,14 @@ a.user-navigation__acc {
 
 .slider-tool-item p {
     position: absolute;
-    top: 65px;
+    top: 62px;
     left: 24px;
     margin: 0;
     margin-bottom: 28px;
 
     font-size: 18px;
     line-height: 24px;
+    font-weight: normal;
     font-family: "Cuprum", Arial, sans-serif;
     color: #ffffff;
 }
@@ -1187,8 +1214,8 @@ a.user-navigation__acc {
 .slider-tool-button {
     position: absolute;
     bottom: 40px;
-    left: 24px;
-    padding: 10px 50px;
+    left: 25px;
+    padding: 11px 46px 9px 50px;
 
     font-size: 14px;
     line-height: 18px;
@@ -1216,7 +1243,7 @@ a.user-navigation__acc {
 .main-brand__wrap {
     width: 100%;
     margin-bottom: 20px;
-    padding: 10px 0;
+    padding: 8px 0 6px 0;
 
     display: -webkit-box;
 
@@ -1244,6 +1271,7 @@ a.user-navigation__acc {
     display: flex;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
+    color: #32425c;
     text-transform: uppercase;
 }
 
@@ -1254,14 +1282,12 @@ a.user-navigation__acc {
 
 .main-product__wrap {
     width: 100%;
-    padding: 10px 0;
+    padding: 11px 0 9px 0;
     background-color: #f2f6f8;
 }
 
 .btn__popular,
 .btn__brand {
-    margin-right: 30px;
-    padding: 10px 40px;
     display: block;
 
     font-size: 14px;
@@ -1275,6 +1301,17 @@ a.user-navigation__acc {
     background-color: #ee3643;
     border: none;
     border-radius: 2px;
+}
+
+
+.btn__popular {
+    margin-right: 25px;
+    padding: 11px 55px 9px 55px;
+}
+
+.btn__brand {
+    margin-right: 25px;
+    padding: 11px 67px 9px 67px;
 }
 
 .btn__popular:hover,
@@ -1308,7 +1345,7 @@ ul.catalog-list__popular {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
     list-style: none;
 }
 
@@ -1327,7 +1364,7 @@ ul.catalog-list__popular {
     -ms-flex-align: center;
     align-items: center;
     width: 218px;
-    height: 140px;
+    height: 143px;
     margin-bottom: 20px;
 
     border: 1px solid #e5e5e5;
@@ -1375,7 +1412,15 @@ ul.catalog-list__popular {
 .index-columns .service {
     max-width: 420px;
     margin: 0;
-    margin-bottom: 60px;
+    margin: -15px 0 70px 0;
+}
+
+.service h2 {
+    margin-bottom: 30px;
+}
+
+.service p {
+    line-height: 24px;
 }
 
 .slider-service {
@@ -1393,7 +1438,7 @@ ul.catalog-list__popular {
     background: #f4f8f9;
     position: absolute;
     top: 0;
-    left: 300px;
+    left: 320px;
     border: none;
     animation: scale 0.7s ease-in-out;
 
@@ -1406,7 +1451,7 @@ ul.catalog-list__popular {
 .slider-item__service h3 {
     max-width: 620px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 35px;
     line-height: 35px;
     font-weight: bold;
@@ -1418,16 +1463,31 @@ ul.catalog-list__popular {
     max-width: 290px;
     margin: 0;
     margin-bottom: 30px;
+    line-height: 24px;
 
 }
 
 .slider-item__service img {
     position: absolute;
-    top: 0;
-    right: 0;
+
     max-width: 465px;
     margin: 0;
 
+}
+
+img.delivery {
+    top: 21px;
+    right: -20px;
+}
+
+img.guarantee {
+    top: 5px;
+    right: -20px;
+}
+
+img.credit {
+    top: 5px;
+    right: -20px;
 }
 
 .service__input {
@@ -1707,6 +1767,19 @@ legend.price-filter {
     background: #f7f3ec;
 }
 
+.min-price::after {
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+    width: 10px;
+    height: 2px;
+
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 .max-price {
     text-align: right;
 }
@@ -1969,8 +2042,10 @@ ul .filter-option:nth-child(5) {
 
     margin-bottom: 20px;
 
-    line-height: 20px;
+    font-family: "PT Sans";
     font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
     text-align: center;
 
     border: 1px solid #e5e5e5;
@@ -1983,10 +2058,6 @@ ul .filter-option:nth-child(5) {
 
 .catalog-items {
     font-size: 0;
-}
-
-.catalog-item {
-    font-size: 16px;
 }
 
 .catalog-item--badge {
@@ -2034,9 +2105,10 @@ ul .filter-option:nth-child(5) {
 .catalog-item-title {
     min-height: 40px;
     padding: 0 25px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
     font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
     font-weight: bold;
     color: #000000;
 }
@@ -2046,7 +2118,7 @@ ul .filter-option:nth-child(5) {
 }
 
 .catalog-item-price {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 32px;
     text-align: center;
 }
@@ -2054,8 +2126,8 @@ ul .filter-option:nth-child(5) {
 .catalog-item-price .price__old {
     display: block;
     min-height: 32px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: -20px;
+    margin-bottom: -10px;
 
     color: #999999;
     background-color: #ffffff;
