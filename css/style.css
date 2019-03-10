@@ -134,6 +134,7 @@ img {
 }
 
 .main-footer-logo {
+
     width: 220px;
     height: 65px;
 
@@ -341,7 +342,7 @@ img {
 
     position: absolute;
     top: 15px;
-    left: 15px;
+    left: 18px;
     width: 16px;
     height: 18px;
 
@@ -1187,12 +1188,6 @@ a.user-navigation__acc {
     padding-left: 30px;
 }
 
-.main-product__wrap {
-    width: 100%;
-    padding: 11px 0 9px 0;
-    background-color: #f2f6f8;
-}
-
 .btn__popular,
 .btn__brand {
     display: block;
@@ -1624,7 +1619,7 @@ img.credit {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 20px 20px 20px 0;
+    padding: 16px 20px 16px 0;
     margin: 0;
 
     list-style: none;
@@ -1672,6 +1667,15 @@ img.credit {
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
     text-decoration: underline;
+}
+
+.main-product__wrap {
+    width: 100%;
+    padding: 9px 0 7px 0;
+    background-color: #f2f6f8;
+}
+.main-product {
+    padding-left: 30px;
 }
 
 .catalog-wrap {
