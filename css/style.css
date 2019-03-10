@@ -564,8 +564,8 @@ p.header-contacts {
 
     display: block;
     width: 300px;
-    margin: 0;
-    padding: 11px 0;
+    margin: 5px 0 0 0;
+    padding: 11px 0 9px 0;
     text-align: center;
     font-size: 21px;
     color: #000000;
@@ -815,6 +815,7 @@ a.user-navigation__acc {
 
     background-color: #ee3643;
     border: none;
+    border-radius: 2px;
 }
 
 .info .button:hover,
@@ -1450,7 +1451,7 @@ ul.catalog-list__popular {
 
 .slider-item__service h3 {
     max-width: 620px;
-    margin: 0;
+    margin-top: -3px;
     margin-bottom: 25px;
     font-size: 35px;
     line-height: 35px;
@@ -1462,17 +1463,23 @@ ul.catalog-list__popular {
 .slider-item__service p {
     max-width: 290px;
     margin: 0;
-    margin-bottom: 30px;
-    line-height: 24px;
+    margin-bottom: 28px;
 
+    line-height: 24px;
+}
+
+p.guarantee {
+    max-width: 380px;
+}
+
+.credit {
+    padding-bottom: 6px;
 }
 
 .slider-item__service img {
     position: absolute;
-
     max-width: 465px;
     margin: 0;
-
 }
 
 img.delivery {
@@ -1481,13 +1488,13 @@ img.delivery {
 }
 
 img.guarantee {
-    top: 5px;
-    right: -20px;
+    top: -1px;
+    right: -30px;
 }
 
 img.credit {
-    top: 5px;
-    right: -20px;
+    top: -1px;
+    right: -30px;
 }
 
 .service__input {
@@ -1499,7 +1506,7 @@ img.credit {
 
     padding-top: 13px;
     padding-bottom: 17px;
-    padding-left: 20px;
+    padding-left: 22px;
     display: block;
 
     font-size: 21px;
@@ -1543,6 +1550,33 @@ img.credit {
 
 #tab1:checked ~ #slide-delivery, #tab2:checked ~ #slide-guarantee, #tab3:checked ~ #slide-credit {
     display: block;
+}
+
+.button-credit {
+    padding: 11px 45px 9px 45px;
+
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Cuprum", Arial, sans-serif;
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+    border: none;
+    border-radius: 2px;
+}
+
+.info .button:hover,
+.contacts .button:hover {
+    background-color: #ca2c37;
+}
+
+.info .button:focus,
+.contacts .button:focus {
+    background-color: #ba2732;
 }
 
 @keyframes scale {
