@@ -1934,7 +1934,7 @@ ul .filter-option {
     line-height: 18px;
     color: #000000;
     text-transform: uppercase;
-    
+
 }
 
 ul .filter-option:nth-child(5) {
@@ -2837,7 +2837,7 @@ ul .filter-option:nth-child(5) {
     border-top: 7px solid #ee3643;
 }
 
-.modal-close__busket {
+.modal-close__basket {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -2853,8 +2853,8 @@ ul .filter-option:nth-child(5) {
     cursor: pointer;
 }
 
-.modal-close__busket::before,
-.modal-close__busket::after {
+.modal-close__basket::before,
+.modal-close__basket::after {
     content: "";
 
     position: absolute;
@@ -2867,19 +2867,19 @@ ul .filter-option:nth-child(5) {
     background-color: #ee3643;
 }
 
-.modal-close__busket::before {
+.modal-close__basket::before {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
-.modal-close__busket::after {
+.modal-close__basket::after {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
-.busket-description {
+.basket-description {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2894,7 +2894,7 @@ ul .filter-option:nth-child(5) {
     font-family: "Cuprum", Arial, sans-serif;
 }
 
-.busket-description:before {
+.basket-description:before {
     content: "";
 
     position: absolute;
@@ -2907,7 +2907,7 @@ ul .filter-option:nth-child(5) {
     background-image: url("../img/icon-mark.svg");
 }
 
-.busket-btn {
+.basket-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2921,7 +2921,7 @@ ul .filter-option:nth-child(5) {
     background-color: #f4f4f4;
 }
 
-.busket-form .button {
+.basket-form .button {
     position: relative;
 
     display: block;
@@ -2937,7 +2937,7 @@ ul .filter-option:nth-child(5) {
     text-transform: uppercase;
 }
 
-.busket-form .button-order {
+.basket-form .button-order {
     margin-right: 10px;
     color: #ffffff;
     border-color: #ee3643;
@@ -2945,15 +2945,15 @@ ul .filter-option:nth-child(5) {
     background-color: #ee3643;
 }
 
-.busket-form .button-order:hover {
+.basket-form .button-order:hover {
     background-color: #ca2c37;
 }
 
-.busket-form .button-order:focus {
+.basket-form .button-order:focus {
     background-color: #ba2732;
 }
 
-.busket-form .button-buy {
+.basket-form .button-buy {
     margin-left: 10px;
     color: #000000;
     border-color: #ffffff;
@@ -2961,11 +2961,11 @@ ul .filter-option:nth-child(5) {
     background-color: #ffffff;
 }
 
-.busket-form .button-buy:hover {
+.basket-form .button-buy:hover {
     border-color: #b5b5b5;
 }
 
-.busket-form .button-buy:focus {
+.basket-form .button-buy:focus {
     border-color: #ee3643;
 }
 

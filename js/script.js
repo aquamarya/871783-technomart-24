@@ -83,3 +83,82 @@ window.addEventListener("keydown", function (evt) {
         }
     }
 });
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
+
+function priviousSlide() {
+    showSlides(slideIndex -= 1);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slider-tool-item");
+    var dots = document.getElementsByClassName("btn-tool");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+
+var basketLink = document.querySelector(".btn__buy");
+
+var basketPopup = document.querySelector(".modal-basket");
+var basketClose = document.querySelector(".modal-close__basket");
+var basketForm = popup.querySelector("form");
+
+var order = document.querySelector(".button-order");
+
+basketLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    basketPopup.classList.add("modal-show");
+    order.focus();
+});
+
+basketClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    basketPopup.classList.remove("modal-show");
+});
+
+basketForm.addEventListener("submit", function (evt) {
+    if (order) {
+
+    } else {
+
+    }
+});
+
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.code === "Escape") {
+        evt.preventDefault();
+        if (basketPopup.classList.contains("modal-show")) {
+            basketPopup.classList.remove("modal-show");
+            basketPopup.classList.remove("modal-error");
+        } else if (basketPopup.classList.contains("modal-show")) {
+            basketPopup.classList.remove("modal-show");
+            basketPopup.classList.remove("modal-error");
+        }
+    }
+});
+
