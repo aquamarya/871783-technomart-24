@@ -153,6 +153,8 @@ img {
 
 .main-footer-logo svg {
     width: 62%;
+    -webkit-transform: translateY(5%);
+    -ms-transform: translateY(5%);
     transform: translateY(5%);
 
 }
@@ -482,6 +484,9 @@ p.header-contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -599,7 +604,7 @@ p.header-contacts {
 
 .inner .user-navigation__login:hover::before {
     color: #32425c;
- }
+}
 
 .inner .user-navigation__login:focus::before,
 .inner .user-navigation__login:active::before {
@@ -710,6 +715,7 @@ a.user-navigation__acc {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+
     justify-content: space-around;
 }
 
@@ -999,7 +1005,13 @@ a.user-navigation__acc {
     width: 30px;
     height: 10px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: center;
 
@@ -1355,6 +1367,7 @@ ul.catalog-list__popular {
 
 .slider-service {
     position: relative;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -1370,6 +1383,7 @@ ul.catalog-list__popular {
     top: 0;
     left: 320px;
     border: none;
+    -webkit-animation: scale 0.7s ease-in-out;
     animation: scale 0.7s ease-in-out;
 
 }
@@ -1507,16 +1521,37 @@ img.credit {
     background-color: #ba2732;
 }
 
-@keyframes scale {
+@-webkit-keyframes scale {
     0% {
+        -webkit-transform: scale(0.9);
         transform: scale(0.9);
         opacity: 0;
     }
     50% {
+        -webkit-transform: scale(1.005);
         transform: scale(1.005);
         opacity: 0.5;
     }
     100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1.005);
+        transform: scale(1.005);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 1;
     }
@@ -1808,6 +1843,8 @@ legend.price-filter {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translateX(-50%)translateY(-50%);
+    -ms-transform: translateX(-50%)translateY(-50%);
     transform: translateX(-50%)translateY(-50%);
 }
 
@@ -2033,11 +2070,13 @@ ul .filter-option:nth-child(5) {
 .filter-sorter a {
     font-family: "PT Sans", Arial, sans-serif;
     color: #c5c5c5;
+    -webkit-text-decoration: underline dotted #ee3643;
     text-decoration: underline dotted #ee3643;
 }
 
 .filter-sorter a:hover {
     color: #000000;
+    -webkit-text-decoration: underline solid #ee3643;
     text-decoration: underline solid #ee3643;
 }
 
@@ -2054,7 +2093,13 @@ ul .filter-option:nth-child(5) {
     width: 43px;
     height: 10px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: center;
 }
@@ -3123,4 +3168,3 @@ ul .filter-option:nth-child(5) {
 
     border: none;
 }
-
