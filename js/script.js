@@ -120,7 +120,7 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-
+/*
 var basketLink = document.querySelector(".btn__buy");
 
 var basketPopup = document.querySelector(".modal-basket");
@@ -162,3 +162,4 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
+*/
