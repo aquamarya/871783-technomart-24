@@ -120,7 +120,7 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-/*
+
 var basketLink = document.querySelector(".btn__buy");
 
 var basketPopup = document.querySelector(".modal-basket");
@@ -140,6 +140,7 @@ basketClose.addEventListener("click", function (evt) {
     basketPopup.classList.remove("modal-show");
 });
 
+/*
 basketForm.addEventListener("submit", function (evt) {
     if (order) {
 
@@ -147,7 +148,7 @@ basketForm.addEventListener("submit", function (evt) {
 
     }
 });
-
+*/
 
 window.addEventListener("keydown", function (evt) {
     if (evt.code === "Escape") {
@@ -162,4 +163,3 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
-*/
