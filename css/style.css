@@ -133,7 +133,7 @@ img {
 
 .main-footer-logo {
     width: 220px;
-    height: 65px;
+    height: 63px;
 
     font-size: 30px;
 
@@ -152,7 +152,7 @@ img {
     width: 62%;
     -webkit-transform: translateY(5%);
     -ms-transform: translateY(5%);
-    transform: translateY(5%);
+    transform: translateY(4%);
 
 }
 
@@ -448,6 +448,7 @@ img {
 }
 
 .site-title {
+    width: 186px;
     margin: 8px 0 40px 53px;
 
     font-style: italic;
@@ -1066,54 +1067,6 @@ a.user-navigation__acc {
     background-color: #ee3643;
 }
 
-/*.slider-tool-controls {
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
-    z-index: 2;
-
-    width: 160px;
-    height: 18px;
-
-    text-align: center;
-    font-size: 0;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.slider-tool-controls label {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    width: 10px;
-    height: 10px;
-    margin-left: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 0;
-
-    background-color: #ffffff;
-}
-
-#slider-1:checked ~ .slider-tools label[for="slider-1"],
-#slider-2:checked ~ .slider-tools label[for="slider-2"] {
-    content: "";
-
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    z-index: 2;
-
-    width: 6px;
-    height: 6px;
-
-    border-radius: 50%;
-
-    background-color: #ee3643;
-}
-*/
-
 #slider-1:checked ~ .slider-tools #slide1,
 #slider-2:checked ~ .slider-tools #slide2 {
     display: block;
@@ -1617,7 +1570,7 @@ img.credit {
 
 .partners li {
     position: relative;
-    margin-left: -4px;
+    margin-left: 0;
     font-size: 18px;
     line-height: 40px;
 }
@@ -1637,6 +1590,7 @@ img.credit {
 
 .info .button {
     display: inline-block;
+    vertical-align: middle;
     margin-top: 10px;
 }
 
@@ -1884,7 +1838,7 @@ legend.price-filter {
 .price-controls label {
     display: inline-block;
     width: 50%;
-
+    vertical-align: middle;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -1985,8 +1939,8 @@ ul .filter-option:nth-child(5) {
 }
 
 
-.filter-input-checkbox + label:hover svg,
-.filter-input-checkbox:checked + label:hover svg,
+.filter-input-checkbox + label:hover::before,
+.filter-input-checkbox:checked + label:hover::after,
 .filter-input-checkbox + label:focus::before,
 .filter-input-checkbox:checked + label:focus::after,
 .filter-input-checkbox + label:active::before,
@@ -2204,7 +2158,7 @@ ul .filter-option:nth-child(5) {
     width: 218px;
 
     margin-bottom: 20px;
-
+    vertical-align: middle;
     text-align: center;
 
     border: 1px solid #e5e5e5;
@@ -2538,7 +2492,6 @@ ul .filter-option:nth-child(5) {
 }
 
 .footer__nav-wrap {
-
     margin: 0;
 
     font-size: 18px;
@@ -2549,7 +2502,7 @@ ul .filter-option:nth-child(5) {
 
 .footer-contacts {
     width: 380px;
-    padding-top: 15px;
+    padding-top: 16px;
     padding-bottom: 49px;
     margin: 0;
     margin-right: -30px;
@@ -2568,19 +2521,22 @@ ul .filter-option:nth-child(5) {
     width: 940px;
 }
 
-.site-navigation__top ul,
-.site-navigation__bottom ul {
+.site-nav__top,
+.site-nav__bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     flex-wrap: wrap;
-    justify-content: space-between;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    justify-content: flex-end;
     list-style: none;
+}
+
+.site-nav__top {
+    width: 640px;
+}
+
+.site-nav__bottom {
+    width: 600px;
 }
 
 .site-navigation__top ul {
@@ -2592,8 +2548,12 @@ ul .filter-option:nth-child(5) {
     color: #ffffff;
 }
 
+.site-navigation__bottom ul {
+    line-height: 18px;
+}
+
 .site-navigation__bottom a {
-    margin-left: 55px;
+    padding-left: 55px;
     color: #f1c77e;
 }
 
@@ -2635,6 +2595,12 @@ ul .filter-option:nth-child(5) {
     padding: 0;
 }
 
+.copyright {
+    width: 240px;
+    margin: 0;
+    margin-left: auto;
+}
+
 .footer-social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2669,7 +2635,7 @@ ul .filter-option:nth-child(5) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 44px;
+    width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #212a3a;
@@ -2687,13 +2653,16 @@ ul .filter-option:nth-child(5) {
 
 
 .footer-mail {
-    margin: 0;
+    width: 140px;
+    margin: 0 50px 0 60px;
     padding: 0;
 }
 
 .footer-copyright {
+    width: 140px;
     margin: 0 15px 0 0;
     padding: 0;
+    justify-content: flex-end;
 }
 
 
@@ -2712,11 +2681,6 @@ ul .filter-option:nth-child(5) {
     color: #ee3643;
 }
 
-.copyright {
-    width: 240px;
-    margin: 0;
-    margin-left: auto;
-}
 
 @-webkit-keyframes bounce {
     0% {
