@@ -102,7 +102,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("slider-tool-item");
+    var slides = document.getElementsByClassName("slider-tool__item");
     var dots = document.getElementsByClassName("btn-tool");
     if (n > slides.length) {
         slideIndex = 1
@@ -121,7 +121,7 @@ function showSlides(n) {
 }
 
 
-var basketLink = document.querySelector(".btn__buy");
+var basketLink = document.querySelector(".btn-buy");
 
 var basketPopup = document.querySelector(".modal-basket");
 var basketClose = document.querySelector(".modal-close__basket");
