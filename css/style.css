@@ -502,15 +502,24 @@ img {
     color: #b7bfc8;
 }
 
+.inner .phone-link {
+    padding-left: 5px;
+}
+.inner .phone-link::before {
+    left: 12px;
+}
+
 .header-contacts {
+    margin-top: 5px;
+    margin-left: 5px;
     font-size: 14px;
     line-height: 23px;
     color: #32425c;
 }
 
-p.header-contacts {
+.inner .header-contacts {
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 12px;
 }
 
 .user-navigation__link{
@@ -754,7 +763,7 @@ a.user-navigation__acc {
 
 .site-navigation a {
     display: block;
-    padding: 17px 30px 15px 30px;
+    padding: 17px 30px 14px 30px;
     vertical-align: middle;
     color: #ffffff
 }
@@ -1544,7 +1553,6 @@ img.credit {
     }
 }
 
-
 .info {
     width: 540px;
     margin-top: -5px;
@@ -1552,6 +1560,10 @@ img.credit {
 
 .info p {
     margin-bottom: 24px;
+}
+
+.p-delivery {
+    width: 400px;
 }
 
 .contacts {
@@ -1566,12 +1578,14 @@ img.credit {
 
 .partners {
     margin-top: -14px;
-
+    padding: 0;
 }
 
 .partners li {
     position: relative;
     margin-left: 0;
+    padding-left: 37px;
+    font-weight: normal;
     font-size: 18px;
     line-height: 40px;
 }
@@ -1580,7 +1594,7 @@ img.credit {
     content: "";
     position: absolute;
     top: 19px;
-    left: -40px;
+    left: 0;
 
     width: 25px;
     height: 2px;
@@ -1646,7 +1660,7 @@ img.credit {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 16px 20px 16px 0;
+    padding: 17px 20px 16px 0;
     margin: 0;
 
     list-style: none;
@@ -1654,7 +1668,7 @@ img.credit {
 
 .breadcrumbs li {
     position: relative;
-    margin-right: 40px;
+    margin-right: 41px;
 }
 
 .breadcrumbs li:last-child {
@@ -1685,6 +1699,7 @@ img.credit {
 
 .breadcrumbs a,
 .breadcrumbs-current {
+    font-weight: bold;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     text-transform: uppercase;
@@ -1698,7 +1713,7 @@ img.credit {
 
 .main-product__wrap {
     width: 100%;
-    padding: 9px 0 7px 0;
+    padding: 8px 0 6px 0;
     background-color: #f2f6f8;
 }
 .main-product {
@@ -1907,7 +1922,7 @@ ul .filter-option:nth-child(5) {
 }
 
 .filter-input-checkbox + label::before {
-    content: url("../img/checkbox-off.svg");
+    content: url("../img/checkbox-off-1.svg");
     position: absolute;
     left: -40px;
     top: -3px;
@@ -1918,14 +1933,10 @@ ul .filter-option:nth-child(5) {
     fill: #c5c5c5;
     background-repeat: no-repeat;
     background-position: 0 0;
-}
-
-.filter-input-checkbox + label svg {
-    fill: #b5c5c5;
 }
 
 .filter-input-checkbox:checked + label::after {
-    content: url("../img/checkbox-on.svg");
+    content: url("../img/checkbox-on-1.svg");
 
     position: absolute;
     top: -3px;
@@ -1939,14 +1950,16 @@ ul .filter-option:nth-child(5) {
     background-position: 0 0;
 }
 
-
 .filter-input-checkbox + label:hover::before,
-.filter-input-checkbox:checked + label:hover::after,
 .filter-input-checkbox + label:focus::before,
+.filter-input-checkbox + label:active::before {
+    content: url("../img/checkbox-off-2.svg");
+}
+
+.filter-input-checkbox:checked + label:hover::after,
 .filter-input-checkbox:checked + label:focus::after,
-.filter-input-checkbox + label:active::before,
 .filter-input-checkbox:checked + label:active::after {
-    color: #b5b5b5;
+    content: url("../img/checkbox-on-2.svg");
 }
 
 .filter-input:disabled + label {
@@ -2505,6 +2518,7 @@ ul .filter-option:nth-child(5) {
     width: 380px;
     padding-top: 16px;
     padding-bottom: 49px;
+    padding-left: 4px;
     margin: 0;
     margin-right: -30px;
     font-size: 18px;
