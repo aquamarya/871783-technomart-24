@@ -448,12 +448,15 @@ img {
 }
 
 .site-title {
-    width: 186px;
-    margin: 8px 0 40px 53px;
-
+    box-sizing: border-box;
+    width: 265px;
+    margin: 0;
+    margin-top: 8px;
+    padding-left: 53px;
+    padding-bottom: 40px;
     font-style: italic;
     font-family: "Cuprum", Arial, sans-serif;
-    font-weight: bold;
+
     font-size: 16px;
     line-height: 23px;
     color: #ee434f;
@@ -471,10 +474,10 @@ img {
 
 .phone-link {
     position: relative;
-    width: 214px;
-
-    padding: 11px 50px 7px 0;
-    margin: 5px 0 0 20px;
+    width: 210px;
+    margin: 0;
+    margin-top: 5px;
+    padding: 10px 50px 8px 0;
 
     font-size: 21px;
     line-height: 21px;
@@ -488,12 +491,10 @@ img {
 
     position: absolute;
     top: 11px;
-    left: 11px;
+    left: 10px;
 
     width: 19px;
     height: 19px;
-
-    padding-left: 48px;
 
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
@@ -508,8 +509,8 @@ img {
 }
 
 p.header-contacts {
-    margin-top: 6px;
-    margin-left: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .user-navigation__link{
@@ -1208,12 +1209,12 @@ a.user-navigation__acc {
 
 
 .btn__popular {
-    margin-right: 25px;
+    margin-right: 23px;
     padding: 11px 55px 9px 55px;
 }
 
 .btn__brand {
-    margin-right: 25px;
+    margin-right: 23px;
     padding: 10px 69px 10px 69px;
 }
 
@@ -2181,13 +2182,13 @@ ul .filter-option:nth-child(5) {
     position: absolute;
     top: -1px;
     right: -1px;
+    z-index: 5;
 
     width: 60px;
     height: 60px;
 
     text-indent: -1000px;
     overflow: hidden;
-    z-index: 5;
 
     background-image: url("../img/new-flag.png");
     background-repeat: no-repeat;
