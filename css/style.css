@@ -99,7 +99,7 @@ img {
     padding: 0;
 }
 
-.main-header-logo,
+.main-header__logo,
 .order-menu {
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -110,7 +110,7 @@ img {
     flex-direction: row;
 }
 
-.main-header-logo {
+.main-header__logo {
     position: absolute;
     width: 220px;
     height: 42px;
@@ -131,7 +131,7 @@ img {
     border-bottom: 5px solid #b52933;
 }
 
-.main-footer-logo {
+.main-footer__logo {
     width: 220px;
     height: 63px;
 
@@ -148,7 +148,7 @@ img {
     border-bottom: 5px solid #b52933;
 }
 
-.main-footer-logo svg {
+.main-footer__logo svg {
     width: 62%;
     -webkit-transform: translateY(5%);
     -ms-transform: translateY(5%);
@@ -156,25 +156,25 @@ img {
 
 }
 
-.main-header-logo path,
-.main-footer-logo path {
+.main-header__logo path,
+.main-footer__logo path {
     fill: #ffffff;
 }
 
-.main-header-logo:hover,
-.main-footer-logo:hover {
+.main-header__logo:hover,
+.main-footer__logo:hover {
     background-color: #ca2c37;
     border-bottom: 5px solid #9a212a;
 }
 
-.main-header-logo:focus,
-.main-footer-logo:focus {
+.main-header__logo:focus,
+.main-footer__logo:focus {
     background-color: #ee3643;
     border-bottom: 5px solid #9a212a;
 }
 
-.main-header-logo:active,
-.main-footer-logo:active {
+.main-header__logo:active,
+.main-footer__logo:active {
     background-color: #ba2732;
     border-bottom: 5px solid #8e1e26;
 }
@@ -225,11 +225,11 @@ img {
     background-color: #ffffff;
 }
 
-.search-form input[type="text"]:focus + .search__label {
+.search-form input[type="text"]:focus + .search-label {
     display: none;
 }
 
-.search__icon {
+.search-icon {
     position: absolute;
     top: 11px;
     left: 17px;
@@ -238,11 +238,11 @@ img {
     opacity: 0.3;
 }
 
-.search-form:hover .search__icon {
+.search-form:hover .search-icon {
     opacity: 1;
 }
 
-.search-form input:focus + .search__label + .search__icon {
+.search-form input:focus + .search-label + .search-icon {
     opacity: 1;
     fill: #ee3643;
 }
@@ -462,7 +462,7 @@ img {
     color: #ee434f;
 }
 
-.main-header-contacts {
+.main-header__contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -795,7 +795,7 @@ a.user-navigation__acc {
     margin-top: 60px;
 }
 
-.range-list-top {
+.range-list__top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -806,9 +806,7 @@ a.user-navigation__acc {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-
     -ms-flex-wrap: wrap;
-
     flex-wrap: wrap;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -820,7 +818,7 @@ a.user-navigation__acc {
     list-style: none;
 }
 
-.range-list-bottom {
+.range-list__bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -828,9 +826,7 @@ a.user-navigation__acc {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-
     -ms-flex-wrap: wrap;
-
     flex-wrap: wrap;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -893,8 +889,8 @@ a.user-navigation__acc {
     color: #ffffff;
 }
 
-.range-list-top .button,
-.range-list-bottom .button {
+.range-list__top .button,
+.range-list__bottom .button {
     width: 130px;
     margin-top: -9px;
     margin-bottom: 22px;
@@ -916,11 +912,11 @@ a.user-navigation__acc {
     border-radius: 2px;
 }
 
-.range-list-top .button {
+.range-list__top .button {
     margin-left: 25px;
 }
 
-.range-list-bottom .button {
+.range-list__bottom .button {
     margin-left: 24px;
 }
 
@@ -943,27 +939,27 @@ a.user-navigation__acc {
     align-items: flex-end;
 }
 
-.materials__icon {
+.materials-icon {
     top: 30px;
     right: 43px;
 }
 
-.tool__icon {
+.tool-icon {
     top: 32px;
     right: 27px;
 }
 
-.technique__icon {
+.technique-icon {
     top: 30px;
     right: 32px;
 }
 
-.discounts__icon  {
+.discounts-icon  {
     top: 25px;
     right: 45px;
 }
 
-.delivery__icon {
+.delivery-icon {
     top: 31px;
     right: 30px;
 }
@@ -990,7 +986,7 @@ a.user-navigation__acc {
     background-position: 0 0;
 }
 
-.range-bottom-wrap {
+.range-bottom__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1006,7 +1002,7 @@ a.user-navigation__acc {
     width: 620px;
 }
 
-.slider-btn--1 {
+.slider-btn__1 {
     position: absolute;
     top: 40%;
     left: 24px;
@@ -1023,7 +1019,7 @@ a.user-navigation__acc {
 
 }
 
-.slider-btn--2 {
+.slider-btn__2 {
     position: absolute;
     top: 40%;
     right: 20px;
@@ -1039,7 +1035,7 @@ a.user-navigation__acc {
     cursor: pointer;
 }
 
-.slider-tool-btn {
+.slider-tool__btn {
     position: absolute;
     left: 50%;
     bottom: 55px;
@@ -1082,14 +1078,14 @@ a.user-navigation__acc {
     display: block;
 }
 
-.slider-tool-list {
+.slider-tool__list {
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
-.slider-tool-item {
+.slider-tool__item {
     display: none;
     margin-left: -10px;
     padding: 0;
@@ -1097,11 +1093,11 @@ a.user-navigation__acc {
     height: 266px;
 }
 
-.slider-tool-item:nth-child(1) {
+.slider-tool__item:nth-child(1) {
     display: block;
 }
 
-.slider-tool-item h3 {
+.slider-tool__item h3 {
     position: absolute;
     top: 24px;
     left: 24px;
@@ -1115,7 +1111,7 @@ a.user-navigation__acc {
     text-transform: uppercase;
 }
 
-.slider-tool-item p {
+.slider-tool__item p {
     position: absolute;
     top: 62px;
     left: 24px;
@@ -1129,7 +1125,7 @@ a.user-navigation__acc {
     color: #ffffff;
 }
 
-.slider-tool-button {
+.slider-tool__button {
     position: absolute;
     bottom: 40px;
     left: 25px;
@@ -1149,11 +1145,11 @@ a.user-navigation__acc {
     border-radius: 2px;
 }
 
-.slider-tool-button :hover {
+.slider-tool__button :hover {
     background-color: #ca2c37;
 }
 
-.slider-tool-button :focus {
+.slider-tool__button :focus {
     background-color: #ba2732;
 }
 
@@ -1199,8 +1195,8 @@ a.user-navigation__acc {
     padding-left: 30px;
 }
 
-.btn__popular,
-.btn__brand {
+.btn-popular,
+.btn-brand {
     display: block;
 
     font-size: 14px;
@@ -1217,18 +1213,18 @@ a.user-navigation__acc {
 }
 
 
-.btn__popular {
+.btn-popular {
     margin-right: 23px;
     padding: 11px 55px 9px 55px;
 }
 
-.btn__brand {
+.btn-brand {
     margin-right: 23px;
     padding: 10px 69px 10px 69px;
 }
 
-.btn__popular:hover,
-.btn__brand:hover {
+.btn-popular:hover,
+.btn-brand:hover {
     background-color: #ca2c37;
 }
 
@@ -1266,9 +1262,7 @@ ul.catalog-list__popular {
     position: relative;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1317,7 +1311,7 @@ ul.catalog-list__popular {
     font-family: "Cuprum", Arial, sans-serif;
 }
 
-.service-wrap-bottom {
+.service-wrap__bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1436,11 +1430,11 @@ img.credit {
     right: -30px;
 }
 
-.service__input {
+.service-input {
     display: none;
 }
 
-.service__label {
+.service-label {
     width: 220px;
 
     padding-top: 13px;
@@ -1460,7 +1454,7 @@ img.credit {
     border-bottom: 1px solid #293449;
 }
 
-.slider-service-tabs::after {
+.slider-service__tabs::after {
     content: "";
 
     position: absolute;
@@ -1477,11 +1471,11 @@ img.credit {
     background-image: url("../img/shadow.png");
 }
 
-.service__input:hover {
+.service-input:hover {
     background-color: #293449;
 }
 
-.service__input:checked + label {
+.service-input:checked + label {
     color: #32425c;
     background-color: #ffffff;
     border: none;
@@ -1921,7 +1915,7 @@ ul .filter-option:nth-child(5) {
     color: #000000;
 }
 
-.filter-input-checkbox + label::before {
+.filter-input__checkbox + label::before {
     content: url("../img/checkbox-off-1.svg");
     position: absolute;
     left: -40px;
@@ -1935,7 +1929,7 @@ ul .filter-option:nth-child(5) {
     background-position: 0 0;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input__checkbox:checked + label::after {
     content: url("../img/checkbox-on-1.svg");
 
     position: absolute;
@@ -1960,6 +1954,10 @@ ul .filter-option:nth-child(5) {
 .filter-input-checkbox:checked + label:focus::after,
 .filter-input-checkbox:checked + label:active::after {
     content: url("../img/checkbox-on-2.svg");
+}
+
+.filter-input-checkbox:disabled + label:hover::before {
+    content: url("../img/checkbox-off-3.svg");
 }
 
 .filter-input:disabled + label {
