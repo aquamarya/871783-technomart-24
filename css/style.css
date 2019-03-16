@@ -476,7 +476,7 @@ img {
     position: relative;
     width: 210px;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 6px;
     padding: 10px 50px 8px 0;
 
     font-size: 21px;
@@ -693,8 +693,8 @@ img {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-top: 8px;
-    margin-left: 20px;
+    margin-top: 9px;
+    margin-left: 18px;
 }
 
 .user-navigation__login:hover::before,
@@ -1703,7 +1703,7 @@ img.credit {
 
 .main-product__wrap {
     width: 100%;
-    padding: 8px 0 6px 0;
+    padding: 9px 0 6px 0;
     background-color: #f2f6f8;
 }
 .main-product {
@@ -1879,7 +1879,12 @@ legend.price-filter {
     text-align: right;
 }
 
+.filter-brands {
+    margin-bottom: 1px;
+}
+
 ul .filter-option {
+
     margin-bottom: 22px;
 
     list-style: none;
@@ -1916,8 +1921,8 @@ ul .filter-option:nth-child(5) {
 .filter-input__checkbox + label::before {
     content: url("../img/checkbox-off-1.svg");
     position: absolute;
-    left: -40px;
-    top: 0;
+    left: -38px;
+    top: -3px;
 
     width: 23px;
     height: 23px;
@@ -1931,8 +1936,8 @@ ul .filter-option:nth-child(5) {
     content: url("../img/checkbox-on-1.svg");
 
     position: absolute;
-    top: 0;
-    left: -40px;
+    top: -3px;
+    left: -38px;
 
     width: 23px;
     height: 23px;
@@ -1968,7 +1973,7 @@ ul .filter-option:nth-child(5) {
     content: "";
 
     position: absolute;
-    left: -42px;
+    left: -40px;
     top: -2px;
 
     width: 25px;
@@ -1983,7 +1988,7 @@ ul .filter-option:nth-child(5) {
     content: "";
 
     position: absolute;
-    left: -34px;
+    left: -32px;
     top:  6px;
 
     width: 9px;
@@ -2105,7 +2110,7 @@ ul .filter-option:nth-child(5) {
 .filter-sorter__btn {
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 17px;
     width: 43px;
     height: 10px;
 
@@ -2243,7 +2248,7 @@ ul .filter-option:nth-child(5) {
 }
 
 .catalog-item h3 {
-    margin-top: 11px;
+    margin-top: 12px;
 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 16px;
@@ -2292,7 +2297,7 @@ ul .filter-option:nth-child(5) {
     display: block;
     width: 80px;
     margin: 13px 35px 20px auto;
-    padding: 4px 32px 3px 29px;
+    padding: 3px 32px 3px 29px;
 
     color: #ffffff;
     background: #ee3643;
@@ -2303,13 +2308,13 @@ ul .filter-option:nth-child(5) {
     content: "";
 
     position: absolute;
-    top: -1px;
-    right: -20px;
+    top: 0;
+    right: -19px;
 
     width: 0;
     height: 0;
 
-    border: 20px solid white;
+    border: 19px solid white;
     border-left-color: #ee3643;
 }
 
