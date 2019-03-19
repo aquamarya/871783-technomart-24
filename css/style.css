@@ -907,7 +907,7 @@ a.user-navigation__acc {
 
     text-transform: uppercase;
 
-    background-color: rgba(178, 178, 178, 0.3);
+    background-color: rgba(178, 178, 178, 0.4);
     border: none;
     border-radius: 2px;
 }
@@ -920,12 +920,15 @@ a.user-navigation__acc {
     margin-left: 24px;
 }
 
-.range-list .button:hover {
+.range-list__top .button:hover,
+.range-list__bottom .button:hover {
     background-color: rgba(178, 178, 178, 0.6);
 }
 
-.range-list .button:focus,
-.range-list .button:active {
+.range-list__top .button:focus,
+.range-list__bottom .button:hover,
+.range-list__top .button:active,
+.range-list__bottom .button:hover {
     background-color: rgba(178, 178, 178, 1);
 }
 
@@ -994,7 +997,7 @@ a.user-navigation__acc {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 }
 
 .slider-tools {
@@ -1312,7 +1315,7 @@ a.user-navigation__acc {
     font-family: "Cuprum", Arial, sans-serif;
 }
 .service-wrap__top {
-    margin: -18px 0 70px 0;
+    margin: -16px 0 70px 0;
 }
 
 .service-wrap__bottom {
@@ -1797,7 +1800,7 @@ legend.price-filter {
 }
 
 .range-controls .bar {
-    width: 70%;
+    width: 80%;
     height: 2px;
 
     background: #00ca74;
@@ -2257,28 +2260,16 @@ ul .filter-option:nth-child(5) {
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
 }
 
-.catalog-item h3 {
-    margin-top: 12px;
-
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.catalog-category,
 .catalog-item__title {
+    margin-top: 12px;
     min-height: 40px;
     padding: 0 25px;
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 19px;
     font-weight: bold;
     color: #000000;
-}
-
-.catalog-category {
-    text-transform: none;
 }
 
 .catalog-item__price {
@@ -2711,7 +2702,7 @@ ul .filter-option:nth-child(5) {
 .footer-mail {
     width: 140px;
     margin: 0;
-    margin-right: 55px;
+    margin-right: 52px;
     padding: 0;
     font-family: "Cuprum", Arial, sans-serif;
     font-weight: normal;
