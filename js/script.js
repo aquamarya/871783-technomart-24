@@ -109,6 +109,14 @@ document.getElementById('slider-next').addEventListener('click', function () {
     showSlides(slideIndex += 1);
 })
 
+document.getElementById('current-slide__1').addEventListener('click', function () {
+    showSlides(slideIndex -= 1);
+})
+
+document.getElementById('current-slide__2').addEventListener('click', function () {
+    showSlides(slideIndex += 1);
+})
+
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
