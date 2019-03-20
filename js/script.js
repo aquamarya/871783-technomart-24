@@ -98,15 +98,16 @@ window.addEventListener("keydown", function (evt) {
 
 
 var slideIndex = 1;
+
 showSlides(slideIndex);
 
-function nextSlide() {
-    showSlides(slideIndex += 1);
-}
-
-function priviousSlide() {
+document.getElementById('slider-prev').addEventListener('click', function () {
     showSlides(slideIndex -= 1);
-}
+})
+
+document.getElementById('slider-next').addEventListener('click', function () {
+    showSlides(slideIndex += 1);
+})
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
