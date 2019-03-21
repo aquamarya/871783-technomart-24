@@ -3,7 +3,7 @@ var link = document.querySelector(".button-connect");
 var popup = document.querySelector(".modal-contacts");
 var close = document.querySelector(".modal-close__contacts");
 
-var form = document.querySelector("form");
+var form = document.querySelector(".contacts-form");
 var name = document.querySelector("[name=user-name]");
 var email = document.querySelector("[name=email]");
 var contactsText = document.querySelector("[name=contacts-text]");
