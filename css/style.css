@@ -128,6 +128,8 @@ img {
 
 .main-header__logo img {
     width: 110px;
+    -webkit-transform: translateY(77%);
+    -ms-transform: translateY(77%);
     transform: translateY(77%);
 }
 
@@ -145,6 +147,8 @@ img {
 
 .main-footer__logo img {
     width: 137px;
+    -webkit-transform: translateY(93%);
+    -ms-transform: translateY(93%);
     transform: translateY(93%);
 }
 
@@ -435,6 +439,7 @@ img {
 }
 
 .site-title {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 265px;
     margin: 0;
@@ -745,7 +750,6 @@ a.user-navigation__acc {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
     justify-content: space-around;
 }
 
@@ -1254,6 +1258,8 @@ a.user-navigation__acc {
 }
 
 .brands-list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1305,6 +1311,8 @@ a.user-navigation__acc {
 }
 
 .brand-item img {
+    -webkit-transform: translateY(-3%);
+    -ms-transform: translateY(-3%);
     transform: translateY(-3%);
 }
 
@@ -1342,7 +1350,6 @@ a.user-navigation__acc {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
     padding: 0;
     margin: 0;
 }
@@ -1352,11 +1359,12 @@ a.user-navigation__acc {
 }
 
 .index-columns h2 {
+    margin-bottom: 30px;
+
     font-size: 30px;
     font-weight: normal;
     font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
 .index-columns p {
@@ -1377,20 +1385,19 @@ a.user-navigation__acc {
 }
 
 .slider-item__service {
+    position: absolute;
     display: none;
+    top: 0;
+    left: 320px;
     width: 600px;
     min-height: 180px;
     height: auto;
-
     padding: 0;
+
     background: #f4f8f9;
-    position: absolute;
-    top: 0;
-    left: 320px;
     border: none;
     -webkit-animation: scale 0.7s ease-in-out;
     animation: scale 0.7s ease-in-out;
-
 }
 
 .slider-item__service:nth-child(1) {
@@ -1451,12 +1458,11 @@ img.credit {
 }
 
 .service-label {
+    display: block;
     width: 218px;
-
     padding-top: 13px;
     padding-bottom: 17px;
     padding-left: 22px;
-    display: block;
 
     font-size: 21px;
     line-height: 30px;
@@ -1482,7 +1488,6 @@ img.credit {
 
     background-repeat: no-repeat;
     background-position: 0 0;
-
 
     background-image: url("../img/shadow.png");
 }
@@ -1595,6 +1600,7 @@ img.credit {
     position: relative;
     margin-left: 0;
     padding-left: 37px;
+
     font-weight: normal;
     font-size: 18px;
     line-height: 40px;
@@ -1605,10 +1611,8 @@ img.credit {
     position: absolute;
     top: 19px;
     left: 0;
-
     width: 25px;
     height: 2px;
-
 
     background-color: #ee3643;
 }
@@ -1723,7 +1727,7 @@ img.credit {
 
 .main-product__wrap {
     width: 100%;
-    padding: 9px 0 6px 0;
+    padding: 8px 0 7px 0;
     background-color: #f2f6f8;
 }
 .main-product {
@@ -1753,7 +1757,7 @@ img.credit {
 .filters h3 {
     width: 200px;
     border: none;
-    padding: 11px 0 11px 20px;
+    padding: 11px 0 10px 20px;
 
     font-size: 13px;
     line-height: 18px;
@@ -1842,20 +1846,20 @@ legend.price-filter {
 }
 
 .price-controls {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 0;
-    position: relative;
 }
 .price-controls:after {
     content: '';
-    width: 9px;
-    height: 1px;
-    background: #444444;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 9px;
+    height: 1px;
+    background: #444444;
     -webkit-transform: translateX(-50%)translateY(-50%);
     -ms-transform: translateX(-50%)translateY(-50%);
     transform: translateX(-50%)translateY(-50%);
@@ -1873,8 +1877,8 @@ legend.price-filter {
     width: 90px;
     padding: 9px 0 9px 5px;
 
-    font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
+    font-family: "PT Sans", Arial, sans-serif;
     text-align: center;
     color: #000000;
 
@@ -1904,29 +1908,22 @@ legend.price-filter {
     margin-bottom: 2px;
 }
 
-.filter-brands::before {
-    content: '';
-    width: 220px;
-    height: 1px;
-    background: #e5e5e5;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .filter-power {
     position: relative;
     padding-top: 21px;
 }
 
+.filter-brands::before,
 .filter-power::before {
     content: '';
-    width: 220px;
-    height: 1px;
-    background: #e5e5e5;
+
     position: absolute;
     top: 0;
     left: 0;
+
+    width: 220px;
+    height: 1px;
+    background: #e5e5e5;
 }
 
 .filter-options {
@@ -1936,13 +1933,13 @@ legend.price-filter {
 .filter-option {
     margin-bottom: 22px;
 
-    list-style: none;
     font-weight: normal;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 18px;
     color: #000000;
     text-transform: uppercase;
+    list-style: none;
 }
 
 .filter-option:nth-child(5) {
@@ -1953,6 +1950,7 @@ legend.price-filter {
     position: relative;
 
     display: block;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     cursor: pointer;
     -webkit-user-select: none;
@@ -2034,6 +2032,7 @@ legend.price-filter {
     height: 25px;
 
     border: 4px solid #c5c5c5;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 50%;
 }
@@ -2065,8 +2064,8 @@ legend.price-filter {
 }
 
 .filter-option__power label {
-    padding-top: 1px;
     position: relative;
+    padding-top: 1px;
 }
 
 .filter-button {
@@ -2093,8 +2092,7 @@ legend.price-filter {
 
 .product-filter {
     position: relative;
-    width: 680px;
-    margin: 0 0 20px 0;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2106,6 +2104,8 @@ legend.price-filter {
     -ms-flex-align: center;
     align-items: center;
 
+    width: 680px;
+    margin: 0 0 20px 0;
 }
 
 .product-filter h3,
@@ -2125,7 +2125,7 @@ legend.price-filter {
 }
 
 .filter-sorting {
-    padding-left: 125px;
+    padding-left: 127px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2149,22 +2149,29 @@ legend.price-filter {
 }
 
 .filter-sorter a {
+    padding-bottom: -3px;
     font-family: "PT Sans", Arial, sans-serif;
     color: #c5c5c5;
-    -webkit-text-decoration: underline dotted #ee3643;
-    text-decoration: underline dotted #ee3643;
+    border-bottom: 1px dotted #ee3643;
+}
+
+.filter-sorter__active a {
+    padding-bottom: 0;
+    border: none;
 }
 
 .filter-sorter a:hover {
+    padding-bottom: -3px;
     color: #000000;
-    -webkit-text-decoration: underline solid #ee3643;
-    text-decoration: underline solid #ee3643;
+    border-bottom: 1px solid #ee3643;
 }
 
 .filter-sorter a:focus,
-.filter-sorter a:active {
+.filter-sorter a:active,
+.filter-sorter__active a{
     color: #ee3643;
-    text-decoration: none;
+    padding-bottom: 0;
+    border: none;
 }
 
 .filter-sorter__btn {
@@ -2173,11 +2180,8 @@ legend.price-filter {
     right: 17px;
     width: 43px;
     height: 10px;
-
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -2208,7 +2212,8 @@ legend.price-filter {
 .btn-up:focus path,
 .btn-down:focus path,
 .btn-up:active path,
-.btn-down:active path{
+.btn-down:active path,
+.btn-up__active path {
     fill: #ee3643;
 }
 
@@ -2220,30 +2225,29 @@ legend.price-filter {
 }
 
 .container .catalog-list__popular {
-    width: 960px;
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    width: 960px;
     padding: 0;
     margin-left: -20px;
 }
 
 .inner .catalog-list {
-    width: 720px;
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    font-size: 0;
+    width: 720px;
     padding: 0;
     margin: 0;
     margin-bottom: 32px;
     margin-left: -20px;
+
+    font-size: 0;
     list-style: none;
 }
 
@@ -2306,10 +2310,10 @@ legend.price-filter {
     min-height: 40px;
     padding: 0 25px;
 
+    font-weight: bold;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
-    font-weight: bold;
     color: #000000;
 }
 
@@ -2394,7 +2398,6 @@ legend.price-filter {
 
     text-transform: uppercase;
 }
-
 
 .btn-buy::before {
     content: "";
@@ -2533,7 +2536,7 @@ legend.price-filter {
 
 .inner-content h2 {
     padding-top: 69px;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 
     font-weight: normal;
     font-size: 30px;
@@ -2552,6 +2555,7 @@ legend.price-filter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2606,7 +2610,10 @@ legend.price-filter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     list-style: none;
 }
@@ -2736,8 +2743,15 @@ legend.price-filter {
     width: 300px;
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
@@ -2754,6 +2768,8 @@ legend.price-filter {
     width: 140px;
     margin: 0;
     padding: 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     font-family: "Cuprum", Arial, sans-serif;
 }
