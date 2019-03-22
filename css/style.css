@@ -6,7 +6,7 @@ body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: normal;
     color: #000000;
 
     background-color: #ffffff;
@@ -850,25 +850,40 @@ a.user-navigation__acc {
 
 .range-item__materials {
     background-color: #ffbf47;
+    background-image: url("../img/icon-1.svg");
+    background-position: 213px 31px;
+    background-repeat: no-repeat;
 }
 
 .range-item__tool {
     background-color: #3bbce3;
+    background-image: url("../img/icon-2.svg");
+    background-position: 197px 33px;
+    background-repeat: no-repeat;
 }
 
 .range-item__technique {
     background-color: #dc91d8;
+    background-image: url("../img/icon-3.svg");
+    background-position: 191px 30px;
+    background-repeat: no-repeat;
 }
 
 .range-item__discounts {
     margin-left: auto;
     background-color: #8ed78f;
+    background-image: url("../img/icon-4.svg");
+    background-position: 196px 26px;
+    background-repeat: no-repeat;
 }
 
 .range-item__delivery {
     -ms-flex-item-align: end;
     align-self: flex-end;
     background-color: #ffc047;
+    background-image: url("../img/icon-5.svg");
+    background-position: 191px 32px;
+    background-repeat: no-repeat;
 }
 
 .range-item h3 {
@@ -922,56 +937,6 @@ a.user-navigation__acc {
 .range-list__top .button:active,
 .range-list__bottom .button:hover {
     background-color: rgba(255, 255, 255, 0.5);
-}
-
-.range-item .icon {
-    position: absolute;
-
-    padding: 0;
-    z-index: 3;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-}
-
-.materials-icon {
-    top: 31px;
-    right: 43px;
-    width: 44px;
-    height: 65px;
-    background-image: url(../img/icon-1.svg);
-}
-
-.tool-icon {
-    top: 33px;
-    right: 28px;
-    width: 75px;
-    height: 61px;
-    background-image: url(../img/icon-2.svg);
-}
-
-.technique-icon {
-    top: 31px;
-    right: 31px;
-    width: 78px;
-    height: 62px;
-    background-image: url(../img/icon-3.svg);
-}
-
-.discounts-icon  {
-    top: 26px;
-    right: 45px;
-    width: 59px;
-    height: 72px;
-    background-image: url(../img/icon-4.svg);
-}
-
-.delivery-icon {
-    top: 32px;
-    right: 31px;
-    width: 78px;
-    height: 63px;
-    background-image: url(../img/icon-5.svg);
 }
 
 .range-item__badge {
@@ -1713,7 +1678,6 @@ img.credit {
 
 .breadcrumbs a,
 .breadcrumbs-current {
-    font-weight: normal;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     text-transform: uppercase;
@@ -1933,7 +1897,6 @@ legend.price-filter {
 .filter-option {
     margin-bottom: 22px;
 
-    font-weight: normal;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 18px;
@@ -1950,8 +1913,6 @@ legend.price-filter {
     position: relative;
 
     display: block;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -2141,8 +2102,9 @@ legend.price-filter {
 
 .filter-sorter {
     position: relative;
+    margin-right: 70px;
     margin-bottom: 0;
-    padding: 0 63px 0 0;
+    padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     color: #000000;
     border: none;
@@ -2151,6 +2113,7 @@ legend.price-filter {
 .filter-sorter a {
     padding-bottom: -3px;
     font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
     color: #c5c5c5;
     border-bottom: 1px dotted #ee3643;
 }
@@ -2535,8 +2498,8 @@ legend.price-filter {
 }
 
 .inner-content h2 {
-    padding-top: 69px;
-    padding-bottom: 4px;
+    padding-top: 68px;
+    padding-bottom: 5px;
 
     font-weight: normal;
     font-size: 30px;
