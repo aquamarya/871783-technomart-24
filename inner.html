@@ -199,16 +199,10 @@
     <section class="catalog">
       <div class="container product-filter">
         <h3>Сортировка:</h3>
-        <form class="filter-sorting" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter-sorter filter-sorter__active">
-            <legend><a>По цене</a></legend>
-          </fieldset>
-          <fieldset class="filter-sorter">
-            <legend><a href="#">По типу</a></legend>
-          </fieldset>
-          <fieldset class="filter-sorter">
-            <legend><a href="#">По функционалу</a></legend>
-          </fieldset>
+        <div class="filter-sorting">
+          <a class="filter-sorter filter-sorter__active">По цене</a>
+          <a class="filter-sorter" href="#">По типу</a>
+          <a class="filter-sorter" href="#">По функционалу</a>
           <div class="filter-sorter__btn">
             <a class="btn btn-up btn-up__active"><span class="visually-hidden">Вверх</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
@@ -217,7 +211,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
             </a>
           </div>
-        </form>
+        </div>
       </div>
       <h2 class="visually-hidden">Список перфораторов</h2>
       <ul class="catalog-list">

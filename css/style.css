@@ -991,7 +991,6 @@ a.user-navigation__acc {
     border: none;
 
     cursor: pointer;
-
 }
 
 .slider-btn__2 {
@@ -2110,7 +2109,7 @@ legend.price-filter {
     border: none;
 }
 
-.filter-sorter a {
+.filter-sorter {
     padding-bottom: -3px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
@@ -2118,20 +2117,20 @@ legend.price-filter {
     border-bottom: 1px dotted #ee3643;
 }
 
-.filter-sorter__active a {
+.filter-sorter__active {
     padding-bottom: 0;
     border: none;
 }
 
-.filter-sorter a:hover {
+.filter-sorter:hover {
     padding-bottom: -3px;
     color: #000000;
     border-bottom: 1px solid #ee3643;
 }
 
-.filter-sorter a:focus,
-.filter-sorter a:active,
-.filter-sorter__active a{
+.filter-sorter:focus,
+.filter-sorter:active,
+.filter-sorter__active {
     color: #ee3643;
     padding-bottom: 0;
     border: none;
@@ -2511,7 +2510,7 @@ legend.price-filter {
 .inner-content p {
     font-size: 14px;
     line-height: 24px;
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .main-footer {
