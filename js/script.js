@@ -140,3 +140,63 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+
+
+var basketLink = document.querySelector(".btn-buy");
+
+var basketPopup = document.querySelector(".modal-basket");
+var basketClose = document.querySelector(".modal-close__basket");
+var basketForm = popup.querySelector("form");
+
+var catalogItem = document.querySelectorAll('.catalog-item');
+var basketOrder = document.querySelector(".button-order");
+
+try {
+    storage = localStorage.getItem("basketOrder");
+} catch (err) {
+    isStorageSupport = false;
+}
+
+try {
+    storage = localStorage.getItem("basketClose");
+} catch (err) {
+    isStorageSupport = false;
+}
+
+
+basketLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    basketPopup.classList.add("modal-show");
+    order.focus();
+});
+
+basketClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    basketPopup.classList.remove("modal-show");
+});
+
+for(var i = 0; i < catalogItem.length; i++){
+    addEventListener(catalogItem[i].querySelector(".btn-buy"), "click");
+}
+
+basketForm.addEventListener("submit", function (evt) {
+    if (order) {
+
+    } else {
+
+    }
+});
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.code === "Escape") {
+        evt.preventDefault();
+        if (basketPopup.classList.contains("modal-show")) {
+            basketPopup.classList.remove("modal-show");
+            basketPopup.classList.remove("modal-error");
+        } else if (basketPopup.classList.contains("modal-show")) {
+            basketPopup.classList.remove("modal-show");
+            basketPopup.classList.remove("modal-error");
+        }
+    }
+});
