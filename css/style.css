@@ -425,19 +425,6 @@ img {
 
 }
 
-.main-navigation {
-    width: 940px;
-    margin-bottom: 60px;
-    padding: 0;
-
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 17px;
-    color: #ffffff;
-
-    background-color: #3a445b;
-    border-bottom: 5px solid #293449;
-}
-
 .site-title {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -750,6 +737,19 @@ a.user-navigation__acc {
 .user-navigation__orders a:focus,
 .user-navigation__acc a:focus {
     color: #b7bfc8;
+}
+
+.main-navigation {
+    width: 940px;
+    margin-bottom: 60px;
+    padding: 0;
+
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+
+    background-color: #32425c;
+    border-bottom: 5px solid #293449;
 }
 
 .site-navigation {
@@ -2538,7 +2538,7 @@ legend.price-filter {
     line-height: 24px;
     font-weight: normal;
     color: #ffffff;
-    background-color: #3a445b;
+    background-color: #32425c;
 }
 
 .footer-contacts {
@@ -2634,7 +2634,7 @@ legend.price-filter {
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
-    background-color: #30374a;
+    background-color: #293449;
 }
 
 .footer-navigation ul {
