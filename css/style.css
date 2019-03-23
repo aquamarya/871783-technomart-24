@@ -382,6 +382,26 @@ img {
     opacity: 0.3;
 }
 
+.inner .order-menu__bookmarks:hover::before,
+.inner .order-menu__bookmarks:focus::before,
+.inner .order-menu__bookmarks:active::before,
+.inner .order-menu__basket:hover::before,
+.inner .order-menu__basket:focus::before,
+.inner .order-menu__basket:active::before{
+    opacity: 1;
+}
+
+.inner .order-menu__bookmarks:focus {
+    color: #999ca1;
+    background-color: #161d29;
+    opacity: 0.6;
+}
+
+.inner .order-menu__bookmarks:active {
+    color: #999ca1;
+    background-color: #161d29;
+}
+
 .order-menu__button {
     position: relative;
 
@@ -422,7 +442,6 @@ img {
     width: 940px;
     margin: 0;
     padding: 0;
-
 }
 
 .site-title {
