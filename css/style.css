@@ -870,7 +870,7 @@ a.user-navigation__acc {
 .range-item__technique {
     background-color: #dc91d8;
     background-image: url("../img/icon-3.svg");
-    background-position: 191px 30px;
+    background-position: 191px 31px;
     background-repeat: no-repeat;
 }
 
@@ -906,8 +906,7 @@ a.user-navigation__acc {
     width: 130px;
     margin-top: -9px;
     margin-bottom: 22px;
-    margin-left: 24px;
-    padding: 11px 2px 9px 2px;
+    padding: 11px 2px 9px 3px;
 
     display: block;
 
@@ -919,7 +918,7 @@ a.user-navigation__acc {
 
     text-transform: uppercase;
 
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 2px;
 }
@@ -927,21 +926,24 @@ a.user-navigation__acc {
 .range-list__top .button {
     margin-left: 25px;
 }
+.range-list__top .btn-technique {
+    margin-left: 23px;
+}
 
 .range-list__bottom .button {
-    margin-left: 24px;
+    margin-left: 23px;
 }
 
 .range-list__top .button:hover,
 .range-list__bottom .button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .range-list__top .button:focus,
 .range-list__bottom .button:hover,
 .range-list__top .button:active,
 .range-list__bottom .button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .range-item__badge {
@@ -1544,7 +1546,7 @@ img.credit {
 }
 
 .info p {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .p-delivery {
