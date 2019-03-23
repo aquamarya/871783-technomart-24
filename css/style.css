@@ -146,10 +146,10 @@ img {
 }
 
 .main-footer__logo img {
-    width: 137px;
+    width: 136px;
     -webkit-transform: translateY(93%);
     -ms-transform: translateY(93%);
-    transform: translateY(93%);
+    transform: translateY(95%);
 }
 
 .main-header__logo:hover,
@@ -763,20 +763,16 @@ a.user-navigation__acc {
 
 .site-navigation a {
     display: block;
-    padding: 17px 30px 14px 30px;
+    padding: 17px 31px 14px 30px;
     vertical-align: middle;
     font-family: "Cuprum", Arial, sans-serif;
     font-weight: normal;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .site-navigation li:first-child,
 .site-navigation li:nth-child(8n) {
     padding-left: 20px;
-}
-
-.site-navigation li:last-child {
-    padding-right: 23px;
 }
 
 .site-navigation a:hover {
@@ -787,8 +783,6 @@ a.user-navigation__acc {
     color: #868c95;
     background-color: #1d2739;
 }
-
-
 
 .main {
     background-color: #ffffff;
@@ -1662,6 +1656,7 @@ img.credit {
 }
 
 .breadcrumbs li:last-child {
+    margin-top: 1px;
     margin-right: 0;
 }
 
@@ -1900,11 +1895,8 @@ legend.price-filter {
 }
 
 .filter-options {
-    padding-left: 35px;
-}
-
-.filter-option {
-    margin-bottom: 22px;
+    padding: 0;
+    margin: 16px 0;
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 15px;
@@ -1912,6 +1904,11 @@ legend.price-filter {
     color: #000000;
     text-transform: uppercase;
     list-style: none;
+}
+
+.filter-option {
+    margin-bottom: 22px;
+    padding-left: 35px;
 }
 
 .filter-option:nth-child(5) {
@@ -1950,7 +1947,6 @@ legend.price-filter {
 
 .filter-input__checkbox:checked + label::after {
     content: "";
-
     position: absolute;
     top: -3px;
     left: -35px;
@@ -1967,8 +1963,7 @@ legend.price-filter {
     content: url("../img/checkbox-off-2.svg");
 }
 
-.filter-input__checkbox + label:focus::before,
-.filter-input__checkbox + label:active::before {
+.filter-input__checkbox + label:focus::before {
     display: none;
 }
 
@@ -1976,8 +1971,7 @@ legend.price-filter {
     content: url("../img/checkbox-on-2.svg");
 }
 
-.filter-input__checkbox:checked + label:focus::after,
-.filter-input__checkbox:checked + label:active::after {
+.filter-input__checkbox:checked + label:focus::after {
     display: none;
 }
 
@@ -2278,6 +2272,7 @@ legend.price-filter {
 }
 
 .catalog-item__price {
+    font-weight: bold;
     font-size: 17px;
     line-height: 32px;
     text-transform: uppercase;
@@ -2441,7 +2436,7 @@ legend.price-filter {
 
 .pagination-item a {
     display: block;
-    padding: 6px 15px 6px 15px;
+    padding: 6px 14px 6px 15px;
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
@@ -2502,7 +2497,6 @@ legend.price-filter {
     font-size: 30px;
     font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
-
 }
 
 .inner-content p {
@@ -2540,6 +2534,7 @@ legend.price-filter {
     width: 100%;
     font-size: 18px;
     line-height: 24px;
+    font-weight: normal;
     color: #ffffff;
     background-color: #3a445b;
 }
