@@ -93,8 +93,7 @@ img {
 }
 
 .order-menu,
-.user-navigation__link,
-.site-navigation {
+.user-navigation__link {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -360,7 +359,6 @@ img {
     position: relative;
     display: block;
     width: 102px;
-
     vertical-align: middle;
     padding-left: 48px;
 
@@ -602,14 +600,6 @@ img {
     background-color: #ffffff;
 }
 
-.user-navigation__login a:hover {
-    color: #000000;
-}
-
-.user-navigation__login a:focus,
-.user-navigation__login a:active {
-    color: #c5c5c5;
-}
 
 .inner .user-navigation__link {
     display: block;
@@ -716,8 +706,8 @@ img {
     color: #32425c;
 }
 
-a.user-navigation__orders,
-a.user-navigation__acc {
+.user-account .user-navigation__orders,
+.user-account .user-navigation__acc {
     position: relative;
 
     font-size: 16px;
@@ -726,11 +716,11 @@ a.user-navigation__acc {
     text-decoration: underline;
 }
 
-a.user-navigation__orders {
+.user-account .user-navigation__orders {
     padding-right: 20px;
 }
 
-a.user-navigation__acc {
+.user-account .user-navigation__acc {
     padding-left: 15px;
 }
 
@@ -748,14 +738,16 @@ a.user-navigation__acc {
     border-radius: 50%;
 }
 
-.user-navigation__orders a:hover,
-.user-navigation__acc a:hover {
+.user-account .user-navigation__orders:hover,
+.user-account .user-navigation__acc:hover {
     color: #ee3643;
+    background-color: #f1f5f7;
 }
 
-.user-navigation__orders a:focus,
-.user-navigation__acc a:focus {
+.user-account .user-navigation__orders:focus,
+.user-account .user-navigation__acc:focus {
     color: #b7bfc8;
+    background-color: #f1f5f7;
 }
 
 .main-navigation {
@@ -778,20 +770,18 @@ a.user-navigation__acc {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
 }
 
 .site-navigation a {
     display: block;
-    padding: 17px 31px 14px 30px;
+    padding: 17px 29px 14px 32px;
     vertical-align: middle;
     font-family: "Cuprum", Arial, sans-serif;
     font-weight: normal;
     color: #ffffff;
-}
-
-.site-navigation li:first-child,
-.site-navigation li:nth-child(8n) {
-    padding-left: 20px;
 }
 
 .site-navigation a:hover {
@@ -1078,6 +1068,14 @@ a.user-navigation__acc {
     display: block;
 }
 
+/*
+#slider-1:checked ~ .slider-tool__btn #slide1,
+#slider-2:checked ~ .slider-tool__btn #slide2 {
+    display: block;
+    background-color: #ee3643;
+}
+*/
+
 .slider-tool__list {
     margin: 0;
     padding: 0;
@@ -1145,11 +1143,11 @@ a.user-navigation__acc {
     border-radius: 2px;
 }
 
-.slider-tool__button :hover {
+.slider-tool__button:hover {
     background-color: #ca2c37;
 }
 
-.slider-tool__button :focus {
+.slider-tool__button:focus {
     background-color: #ba2732;
 }
 
@@ -1179,7 +1177,7 @@ a.user-navigation__acc {
 
 .main-brand__wrap{
     margin-bottom: 20px;
-    padding: 8px 0 8px 0;
+    padding: 8px 0;
 }
 
 .popular-product,
@@ -1195,10 +1193,7 @@ a.user-navigation__acc {
     text-transform: uppercase;
 }
 
-.popular-product{
-    padding-left: 28px;
-}
-
+.popular-product,
 .main-brand {
     padding-left: 28px;
 }
@@ -1220,7 +1215,6 @@ a.user-navigation__acc {
     border-radius: 2px;
 }
 
-
 .btn-popular {
     margin-top: -2px;
     margin-right: 24px;
@@ -1229,7 +1223,7 @@ a.user-navigation__acc {
 
 .btn-brand {
     margin-right: 24px;
-    padding: 10px 69px 10px 69px;
+    padding: 10px 69px;
 }
 
 .btn-popular:hover,
@@ -1429,17 +1423,17 @@ p.guarantee {
     margin: 0;
 }
 
-img.delivery {
+.delivery-item {
     top: 21px;
     right: -20px;
 }
 
-img.guarantee {
+.guarantee-item {
     top: -1px;
     right: -30px;
 }
 
-img.credit {
+.credit-item {
     top: -1px;
     right: -30px;
 }
@@ -1493,7 +1487,9 @@ img.credit {
     border: none;
 }
 
-#tab1:checked ~ #slide-delivery, #tab2:checked ~ #slide-guarantee, #tab3:checked ~ #slide-credit {
+#tab1:checked ~ #slide-delivery,
+#tab2:checked ~ #slide-guarantee,
+#tab3:checked ~ #slide-credit {
     display: block;
 }
 
@@ -1579,7 +1575,7 @@ img.credit {
 
 .contacts p {
     width: 200px;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
 }
 
 .partners {
@@ -1621,7 +1617,7 @@ img.credit {
 
 .info .button,
 .contacts .button {
-    padding: 11px 39px 9px 41px;
+    padding: 11px 38px 9px 42px;
 
     font-size: 14px;
     line-height: 18px;
