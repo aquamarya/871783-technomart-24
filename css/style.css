@@ -769,6 +769,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     list-style: none;
     margin: 0;
@@ -1067,14 +1069,6 @@ img {
 #slider-2:checked ~ .slider-tools #slide2 {
     display: block;
 }
-
-/*
-#slider-1:checked ~ .slider-tool__btn #slide1,
-#slider-2:checked ~ .slider-tool__btn #slide2 {
-    display: block;
-    background-color: #ee3643;
-}
-*/
 
 .slider-tool__list {
     margin: 0;
@@ -2733,8 +2727,6 @@ legend.price-filter {
     margin: 0;
     margin-right: 52px;
     padding: 0;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-weight: normal;
 }
 
 .footer-copyright {
@@ -2744,9 +2736,7 @@ legend.price-filter {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    font-family: "Cuprum", Arial, sans-serif;
 }
-
 
 .footer-mail a,
 .footer-copyright a {
@@ -3276,4 +3266,3 @@ legend.price-filter {
 .basket-form .button-buy:focus {
     border-color: #ee3643;
 }
-
